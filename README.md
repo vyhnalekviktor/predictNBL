@@ -1,5 +1,5 @@
 # NBL player prediction
-a professional-grade predictive analytics tool designed for the Czech Basketball League (NBL). It utilizes machine learning (XGBoost) to forecast individual player points and calculate the statistical probability of Over/Under betting lines.
+a professional-grade (one day project) predictive analytics tool designed for the Czech Basketball League (NBL). It utilizes machine learning (XGBoost) to forecast individual player points and calculate the statistical probability of Over/Under betting lines.
 
 > [!WARNING]
 > This tool is for analytical and portfolio purposes only. I am not providing the datasets and the training model for gamblers ;)
