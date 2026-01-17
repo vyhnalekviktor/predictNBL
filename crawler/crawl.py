@@ -62,6 +62,8 @@ def parse_match_data(data, match_id):
     teams_names = {int(k): normalize_text(v.get('name', 'unknown')) for k, v in data.get('tm', {}).items() if
                    k.isdigit()}
 
+    raw_date = data.get('d', {}).get('gdtutc')
+    match_date = str(raw_date).split('T')[0] if raw_date else "unknown"
     # A) Play by play
     pbp_rows = []
     action_time_map = {}
@@ -113,7 +115,7 @@ def parse_match_data(data, match_id):
             eff = (pts + reb + ast + stl + blk) - (missed_fg + missed_ft + to)
 
             box_rows.append({
-                'match_id': match_id, 'team': team_name, 'player': lookup.get((tid, int(pno))),
+                'match_id': match_id, 'date': match_date, 'team': team_name, 'player': lookup.get((tid, int(pno))),
                 'jersey': p.get('shirtNumber'), 'starter': p.get('starter'), 'minutes': p.get('sMinutes'),
                 'points': pts, 'rebounds': reb, 'assists': ast, 'fouls': p.get('sFoulsPersonal'),
                 'turnovers': to, 'steals': stl, 'blocks': blk, 'plus_minus': p.get('sPlusMinusPoints'),
