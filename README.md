@@ -26,7 +26,7 @@ The system is built on Moneyball principles, focusing on advanced metrics like U
 
 **R2 Score:** 0.4709 (Explains ~47% of total volatility)
 
-## Installation
+## Installation (wont work...)
 1. Clone the repository: `git clone https://github.com/vyhnalekviktor/predictNBL.git; cd predictNBL`
 
 2. Set up a virtual environment: `python -m venv .venv source .venv/bin/activate` # Windows: `.venv\Scripts\activate`
