@@ -167,7 +167,7 @@ def append_to_csv(data_list, folder, filename):
 # === MAIN LOGIC ===
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python main.py input.txt")
+        print("Usage: python crawl.py input.txt")
         sys.exit(1)
 
     input_filename = sys.argv[1]
