@@ -1,2 +1,4 @@
 data/
 crawler/input*
+crawler/sample.json
+dataset_enrichment/zadani.txt
