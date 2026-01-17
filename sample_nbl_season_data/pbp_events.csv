@@ -1,0 +1,1236 @@
+﻿match_id;period;clock;gt;team;player;action_type;sub_type;success;score_home;score_away
+2517865;4;00:00:00;00:00;;;game;end;1;98;86
+2517865;4;00:00:00;00:00;;;period;end;1;98;86
+2517865;4;00:11:60;00:11;usk praha;o. svec;freethrow;2of2;1;98;86
+2517865;4;00:11:60;00:11;usk praha;o. svec;freethrow;1of2;1;97;86
+2517865;4;00:11:60;00:11;usk praha;j. campbell;substitution;out;1;96;86
+2517865;4;00:11:60;00:11;usk praha;m. kramosil;substitution;in;1;96;86
+2517865;4;00:11:60;00:11;usk praha;o. svec;foulon;;1;96;86
+2517865;4;00:11:60;00:11;gba fruko-schulz jindrichuv hradec;t. valentiny;foul;personal;1;96;86
+2517865;4;00:27:50;00:27;usk praha;o. svec;rebound;defensive;1;96;86
+2517865;4;00:31:60;00:31;gba fruko-schulz jindrichuv hradec;t. valentiny;3pt;jumpshot;0;96;86
+2517865;4;00:40:30;00:40;usk praha;o. svec;assist;;1;96;86
+2517865;4;00:40:30;00:40;usk praha;j. campbell;2pt;layup;1;96;86
+2517865;4;00:49:40;00:49;gba fruko-schulz jindrichuv hradec;f. kabrt;freethrow;2of2;1;94;86
+2517865;4;00:49:40;00:49;gba fruko-schulz jindrichuv hradec;f. kabrt;freethrow;1of2;1;94;85
+2517865;4;00:49:40;00:49;gba fruko-schulz jindrichuv hradec;f. kabrt;foulon;;1;94;84
+2517865;4;00:49:40;00:49;usk praha;o. svec;foul;personal;1;94;84
+2517865;4;00:53:70;00:53;gba fruko-schulz jindrichuv hradec;f. kabrt;steal;;1;94;84
+2517865;4;00:53:70;00:53;usk praha;m. safarik;turnover;badpass;1;94;84
+2517865;4;00:59:80;00:59;gba fruko-schulz jindrichuv hradec;l. festr;assist;;1;94;84
+2517865;4;00:59:80;00:59;gba fruko-schulz jindrichuv hradec;j. fairweather;3pt;jumpshot;1;94;84
+2517865;4;01:24:00;01:24;usk praha;f. fuxa;assist;;1;94;81
+2517865;4;01:24:00;01:24;usk praha;m. safarik;3pt;jumpshot;1;94;81
+2517865;4;01:30:00;01:30;usk praha;o. svec;assist;;1;91;81
+2517865;4;01:30:00;01:30;usk praha;f. fuxa;freethrow;2of2;1;91;81
+2517865;4;01:30:00;01:30;usk praha;f. fuxa;freethrow;1of2;0;90;81
+2517865;4;01:30:00;01:30;gba fruko-schulz jindrichuv hradec;g. wiznitzer;substitution;out;1;90;81
+2517865;4;01:30:00;01:30;gba fruko-schulz jindrichuv hradec;l. festr;substitution;in;1;90;81
+2517865;4;01:30:00;01:30;gba fruko-schulz jindrichuv hradec;;timeout;full;1;90;81
+2517865;4;01:30:00;01:30;usk praha;f. fuxa;foulon;;1;90;81
+2517865;4;01:30:00;01:30;gba fruko-schulz jindrichuv hradec;c. bajema;foul;unsportsmanlike;1;90;81
+2517865;4;01:34:00;01:34;usk praha;f. fuxa;rebound;defensive;1;90;81
+2517865;4;01:38:00;01:38;gba fruko-schulz jindrichuv hradec;j. fairweather;2pt;floatingjumpshot;0;90;81
+2517865;4;01:50:00;01:50;usk praha;j. campbell;2pt;drivinglayup;1;90;81
+2517865;4;02:00:00;02:00;gba fruko-schulz jindrichuv hradec;f. kabrt;assist;;1;88;81
+2517865;4;02:00:00;02:00;gba fruko-schulz jindrichuv hradec;t. valentiny;3pt;jumpshot;1;88;81
+2517865;4;02:04:00;02:04;gba fruko-schulz jindrichuv hradec;t. jansa;substitution;out;1;88;78
+2517865;4;02:04:00;02:04;gba fruko-schulz jindrichuv hradec;t. valentiny;substitution;in;1;88;78
+2517865;4;02:21:00;02:21;usk praha;o. svec;2pt;drivinglayup;1;88;78
+2517865;4;02:22:00;02:22;usk praha;o. svec;rebound;defensive;1;86;78
+2517865;4;02:25:00;02:25;gba fruko-schulz jindrichuv hradec;c. bajema;2pt;dunk;0;86;78
+2517865;4;02:30:00;02:30;gba fruko-schulz jindrichuv hradec;c. bajema;steal;;1;86;78
+2517865;4;02:30:00;02:30;usk praha;m. safarik;turnover;badpass;1;86;78
+2517865;4;02:41:00;02:41;gba fruko-schulz jindrichuv hradec;j. fairweather;2pt;floatingjumpshot;1;86;78
+2517865;4;02:49:00;02:49;usk praha;j. campbell;2pt;layup;1;86;76
+2517865;4;02:49:00;02:49;usk praha;j. campbell;rebound;offensive;1;84;76
+2517865;4;02:53:00;02:53;usk praha;m. safarik;2pt;drivinglayup;0;84;76
+2517865;4;03:01:00;03:01;gba fruko-schulz jindrichuv hradec;l. festr;substitution;out;1;84;76
+2517865;4;03:01:00;03:01;gba fruko-schulz jindrichuv hradec;t. jansa;substitution;in;1;84;76
+2517865;4;03:01:00;03:01;usk praha;;timeout;full;1;84;76
+2517865;4;03:16:00;03:16;usk praha;;rebound;defensive;1;84;76
+2517865;4;03:16:00;03:16;gba fruko-schulz jindrichuv hradec;j. fairweather;3pt;jumpshot;0;84;76
+2517865;4;03:33:00;03:33;usk praha;j. campbell;freethrow;3of3;1;84;76
+2517865;4;03:33:00;03:33;usk praha;o. svec;assist;;1;83;76
+2517865;4;03:33:00;03:33;usk praha;j. campbell;freethrow;2of3;1;83;76
+2517865;4;03:33:00;03:33;usk praha;j. campbell;freethrow;1of3;0;82;76
+2517865;4;03:33:00;03:33;usk praha;j. campbell;foulon;;1;82;76
+2517865;4;03:33:00;03:33;gba fruko-schulz jindrichuv hradec;l. festr;foul;personal;1;82;76
+2517865;4;03:35:00;03:35;usk praha;b. schilb;rebound;defensive;1;82;76
+2517865;4;03:38:00;03:38;gba fruko-schulz jindrichuv hradec;f. kabrt;2pt;jumpshot;0;82;76
+2517865;4;04:04:00;04:04;usk praha;p. samoura;substitution;out;1;82;76
+2517865;4;04:04:00;04:04;usk praha;m. safarik;substitution;in;1;82;76
+2517865;4;04:04:00;04:04;usk praha;p. samoura;freethrow;2of2;1;82;76
+2517865;4;04:04:00;04:04;usk praha;o. svec;assist;;1;81;76
+2517865;4;04:04:00;04:04;usk praha;p. samoura;freethrow;1of2;1;81;76
+2517865;4;04:04:00;04:04;gba fruko-schulz jindrichuv hradec;t. valentiny;substitution;out;1;80;76
+2517865;4;04:04:00;04:04;gba fruko-schulz jindrichuv hradec;f. kabrt;substitution;in;1;80;76
+2517865;4;04:04:00;04:04;usk praha;p. samoura;foulon;;1;80;76
+2517865;4;04:04:00;04:04;gba fruko-schulz jindrichuv hradec;t. valentiny;foul;personal;1;80;76
+2517865;4;04:30:00;04:30;gba fruko-schulz jindrichuv hradec;j. fairweather;assist;;1;80;76
+2517865;4;04:30:00;04:30;gba fruko-schulz jindrichuv hradec;l. festr;3pt;jumpshot;1;80;76
+2517865;4;04:53:00;04:53;gba fruko-schulz jindrichuv hradec;;timeout;full;1;80;73
+2517865;4;04:55:00;04:55;usk praha;p. samoura;assist;;1;80;73
+2517865;4;04:55:00;04:55;usk praha;j. campbell;3pt;jumpshot;1;80;73
+2517865;4;05:11:00;05:11;usk praha;j. campbell;rebound;defensive;1;77;73
+2517865;4;05:17:00;05:17;gba fruko-schulz jindrichuv hradec;j. fairweather;2pt;pullupjumpshot;0;77;73
+2517865;4;05:28:00;05:28;usk praha;j. campbell;freethrow;3of3;1;77;73
+2517865;4;05:28:00;05:28;usk praha;p. samoura;assist;;1;76;73
+2517865;4;05:28:00;05:28;usk praha;j. campbell;freethrow;2of3;1;76;73
+2517865;4;05:28:00;05:28;usk praha;j. campbell;freethrow;1of3;0;75;73
+2517865;4;05:29:00;05:29;usk praha;j. campbell;foulon;;1;75;73
+2517865;4;05:29:00;05:29;gba fruko-schulz jindrichuv hradec;j. fairweather;foul;personal;1;75;73
+2517865;4;05:49:00;05:49;gba fruko-schulz jindrichuv hradec;c. bajema;freethrow;1of1;1;75;73
+2517865;4;05:49:00;05:49;gba fruko-schulz jindrichuv hradec;c. bajema;foulon;;1;75;72
+2517865;4;05:49:00;05:49;usk praha;j. campbell;foul;personal;1;75;72
+2517865;4;05:49:00;05:49;gba fruko-schulz jindrichuv hradec;g. wiznitzer;assist;;1;75;72
+2517865;4;05:49:00;05:49;gba fruko-schulz jindrichuv hradec;c. bajema;2pt;layup;1;75;72
+2517865;4;06:06:00;06:06;usk praha;h. ibarguen mosquera;substitution;out;1;75;70
+2517865;4;06:06:00;06:06;usk praha;o. svec;substitution;in;1;75;70
+2517865;4;06:06:00;06:06;gba fruko-schulz jindrichuv hradec;;timeout;full;1;75;70
+2517865;4;06:09:00;06:09;usk praha;p. samoura;assist;;1;75;70
+2517865;4;06:09:00;06:09;usk praha;j. campbell;3pt;jumpshot;1;75;70
+2517865;4;06:30:00;06:30;gba fruko-schulz jindrichuv hradec;j. fairweather;assist;;1;72;70
+2517865;4;06:30:00;06:30;gba fruko-schulz jindrichuv hradec;l. festr;3pt;jumpshot;1;72;70
+2517865;4;06:56:00;06:56;usk praha;p. samoura;2pt;jumpshot;1;72;67
+2517865;4;07:06:00;07:06;usk praha;h. ibarguen mosquera;rebound;defensive;1;70;67
+2517865;4;07:12:00;07:12;gba fruko-schulz jindrichuv hradec;t. valentiny;3pt;jumpshot;0;70;67
+2517865;4;07:22:00;07:22;gba fruko-schulz jindrichuv hradec;c. bajema;rebound;defensive;1;70;67
+2517865;4;07:26:00;07:26;usk praha;h. ibarguen mosquera;2pt;hookshot;0;70;67
+2517865;4;07:54:00;07:54;gba fruko-schulz jindrichuv hradec;l. festr;3pt;pullupjumpshot;1;70;67
+2517865;4;07:56:00;07:56;gba fruko-schulz jindrichuv hradec;c. bajema;foulon;;1;70;64
+2517865;4;07:56:00;07:56;usk praha;p. samoura;foul;personal;1;70;64
+2517865;4;07:56:00;07:56;gba fruko-schulz jindrichuv hradec;c. bajema;rebound;defensive;1;70;64
+2517865;4;07:58:00;07:58;usk praha;f. fuxa;3pt;jumpshot;0;70;64
+2517865;4;08:12:00;08:12;usk praha;b. schilb;substitution;in;1;70;64
+2517865;4;08:12:00;08:12;usk praha;f. fuxa;substitution;in;1;70;64
+2517865;4;08:12:00;08:12;usk praha;j. bruce;substitution;out;1;70;64
+2517865;4;08:12:00;08:12;usk praha;d. vlk;substitution;out;1;70;64
+2517865;4;08:12:00;08:12;usk praha;j. campbell;foulon;;1;70;64
+2517865;4;08:12:00;08:12;gba fruko-schulz jindrichuv hradec;l. festr;foul;personal;1;70;64
+2517865;4;08:13:00;08:13;usk praha;j. campbell;rebound;defensive;1;70;64
+2517865;4;08:15:00;08:15;gba fruko-schulz jindrichuv hradec;t. valentiny;2pt;floatingjumpshot;0;70;64
+2517865;4;08:25:00;08:25;gba fruko-schulz jindrichuv hradec;t. valentiny;rebound;defensive;1;70;64
+2517865;4;08:29:00;08:29;usk praha;j. campbell;3pt;jumpshot;0;70;64
+2517865;4;08:40:00;08:40;gba fruko-schulz jindrichuv hradec;f. kabrt;substitution;out;1;70;64
+2517865;4;08:40:00;08:40;gba fruko-schulz jindrichuv hradec;t. valentiny;substitution;in;1;70;64
+2517865;4;08:40:00;08:40;usk praha;;rebound;defensive;1;70;64
+2517865;4;08:42:00;08:42;gba fruko-schulz jindrichuv hradec;c. bajema;3pt;jumpshot;0;70;64
+2517865;4;08:44:00;08:44;gba fruko-schulz jindrichuv hradec;f. kabrt;rebound;defensive;1;70;64
+2517865;4;08:51:00;08:51;gba fruko-schulz jindrichuv hradec;c. bajema;block;;1;70;64
+2517865;4;08:51:00;08:51;usk praha;h. ibarguen mosquera;2pt;layup;0;70;64
+2517865;4;08:57:00;08:57;usk praha;;rebound;offensive;1;70;64
+2517865;4;08:59:00;08:59;usk praha;d. vlk;2pt;layup;0;70;64
+2517865;4;09:05:00;09:05;usk praha;j. bruce;rebound;defensive;1;70;64
+2517865;4;09:08:00;09:08;gba fruko-schulz jindrichuv hradec;l. festr;3pt;jumpshot;0;70;64
+2517865;4;09:21:00;09:21;usk praha;j. campbell;assist;;1;70;64
+2517865;4;09:21:00;09:21;usk praha;h. ibarguen mosquera;2pt;layup;1;70;64
+2517865;4;09:30:00;09:30;usk praha;p. samoura;foulon;;1;68;64
+2517865;4;09:30:00;09:30;gba fruko-schulz jindrichuv hradec;f. kabrt;foul;personal;1;68;64
+2517865;4;09:49:00;09:49;gba fruko-schulz jindrichuv hradec;j. fairweather;assist;;1;68;64
+2517865;4;09:49:00;09:49;gba fruko-schulz jindrichuv hradec;c. bajema;3pt;jumpshot;1;68;64
+2517865;4;10:00:00;10:00;;;period;start;1;68;61
+2517865;4;10:00:00;10:00;gba fruko-schulz jindrichuv hradec;j. micka;substitution;out;1;68;61
+2517865;4;10:00:00;10:00;gba fruko-schulz jindrichuv hradec;g. wiznitzer;substitution;in;1;68;61
+2517865;4;10:00:00;10:00;usk praha;m. safarik;substitution;out;1;68;61
+2517865;4;10:00:00;10:00;usk praha;j. bruce;substitution;in;1;68;61
+2517865;3;00:00:00;00:00;;;period;end;1;68;61
+2517865;3;00:01:70;00:01;usk praha;h. ibarguen mosquera;rebound;defensive;1;68;61
+2517865;3;00:03:50;00:03;gba fruko-schulz jindrichuv hradec;j. micka;2pt;layup;0;68;61
+2517865;3;00:26:10;00:26;usk praha;j. bruce;rebound;defensive;1;66;61
+2517865;3;00:25:80;00:25;usk praha;h. ibarguen mosquera;substitution;in;1;68;61
+2517865;3;00:25:80;00:25;usk praha;p. samoura;substitution;in;1;68;61
+2517865;3;00:25:80;00:25;usk praha;j. bruce;substitution;out;1;68;61
+2517865;3;00:25:80;00:25;usk praha;f. fuxa;substitution;out;1;68;61
+2517865;3;00:25:80;00:25;usk praha;j. bruce;freethrow;2of2;1;68;61
+2517865;3;00:25:80;00:25;usk praha;j. bruce;freethrow;1of2;1;67;61
+2517865;3;00:25:80;00:25;gba fruko-schulz jindrichuv hradec;n. kemm;substitution;out;1;66;61
+2517865;3;00:25:80;00:25;gba fruko-schulz jindrichuv hradec;j. fairweather;substitution;in;1;66;61
+2517865;3;00:25:80;00:25;usk praha;j. bruce;foulon;;1;66;61
+2517865;3;00:25:80;00:25;gba fruko-schulz jindrichuv hradec;j. micka;foul;personal;1;66;61
+2517865;3;00:29:20;00:29;gba fruko-schulz jindrichuv hradec;c. bajema;3pt;jumpshot;0;66;61
+2517865;3;00:39:20;00:39;gba fruko-schulz jindrichuv hradec;l. festr;steal;;1;66;61
+2517865;3;00:39:20;00:39;usk praha;j. campbell;turnover;ballhandling;1;66;61
+2517865;3;00:51:60;00:51;gba fruko-schulz jindrichuv hradec;c. bajema;freethrow;2of2;1;66;61
+2517865;3;00:51:60;00:51;gba fruko-schulz jindrichuv hradec;c. bajema;freethrow;1of2;1;66;60
+2517865;3;00:51:60;00:51;gba fruko-schulz jindrichuv hradec;c. bajema;foulon;;1;66;59
+2517865;3;00:51:60;00:51;usk praha;j. bruce;foul;personal;1;66;59
+2517865;3;01:05:00;01:05;usk praha;f. fuxa;freethrow;2of2;1;66;59
+2517865;3;01:05:00;01:05;usk praha;f. fuxa;freethrow;1of2;0;65;59
+2517865;3;01:05:00;01:05;gba fruko-schulz jindrichuv hradec;t. jansa;substitution;out;1;65;59
+2517865;3;01:05:00;01:05;gba fruko-schulz jindrichuv hradec;l. festr;substitution;in;1;65;59
+2517865;3;01:05:00;01:05;usk praha;f. fuxa;foulon;;1;65;59
+2517865;3;01:05:00;01:05;gba fruko-schulz jindrichuv hradec;f. kabrt;foul;personal;1;65;59
+2517865;3;01:10:00;01:10;usk praha;f. fuxa;rebound;offensive;1;65;59
+2517865;3;01:12:00;01:12;usk praha;d. vlk;2pt;layup;0;65;59
+2517865;3;01:26:00;01:26;usk praha;j. bruce;rebound;defensive;1;65;59
+2517865;3;01:26:00;01:26;gba fruko-schulz jindrichuv hradec;t. jansa;freethrow;2of2;0;65;59
+2517865;3;01:26:00;01:26;gba fruko-schulz jindrichuv hradec;t. jansa;freethrow;1of2;0;65;59
+2517865;3;01:26:00;01:26;gba fruko-schulz jindrichuv hradec;t. jansa;foulon;;1;65;59
+2517865;3;01:26:00;01:26;usk praha;f. fuxa;foul;personal;1;65;59
+2517865;3;01:26:00;01:26;gba fruko-schulz jindrichuv hradec;t. jansa;rebound;offensive;1;65;59
+2517865;3;01:26:00;01:26;usk praha;j. bruce;block;;1;65;59
+2517865;3;01:26:00;01:26;gba fruko-schulz jindrichuv hradec;j. micka;2pt;layup;0;65;59
+2517865;3;01:41:00;01:41;usk praha;m. safarik;2pt;drivinglayup;1;65;59
+2517865;3;01:55:00;01:55;gba fruko-schulz jindrichuv hradec;t. valentiny;substitution;out;1;63;59
+2517865;3;01:55:00;01:55;gba fruko-schulz jindrichuv hradec;c. bajema;substitution;in;1;63;59
+2517865;3;01:55:00;01:55;usk praha;j. campbell;substitution;in;1;63;59
+2517865;3;01:55:00;01:55;usk praha;j. bruce;substitution;in;1;63;59
+2517865;3;01:55:00;01:55;usk praha;o. svec;substitution;out;1;63;59
+2517865;3;01:55:00;01:55;usk praha;p. samoura;substitution;out;1;63;59
+2517865;3;01:55:00;01:55;gba fruko-schulz jindrichuv hradec;;turnover;24sec;1;63;59
+2517865;3;01:55:00;01:55;gba fruko-schulz jindrichuv hradec;j. micka;rebound;offensive;1;63;59
+2517865;3;02:00:00;02:00;gba fruko-schulz jindrichuv hradec;t. valentiny;3pt;jumpshot;0;63;59
+2517865;3;02:17:00;02:17;gba fruko-schulz jindrichuv hradec;t. jansa;rebound;defensive;1;63;59
+2517865;3;02:19:00;02:19;usk praha;o. svec;3pt;jumpshot;0;63;59
+2517865;3;02:45:00;02:45;usk praha;p. samoura;foulon;;1;63;59
+2517865;3;02:45:00;02:45;gba fruko-schulz jindrichuv hradec;j. micka;foul;personal;1;63;59
+2517865;3;02:45:00;02:45;usk praha;p. samoura;rebound;defensive;1;63;59
+2517865;3;02:49:00;02:49;gba fruko-schulz jindrichuv hradec;t. jansa;2pt;jumpshot;0;63;59
+2517865;3;03:07:00;03:07;usk praha;m. safarik;turnover;ballhandling;1;63;59
+2517865;3;03:17:00;03:17;usk praha;d. vlk;rebound;defensive;1;63;59
+2517865;3;03:21:00;03:21;gba fruko-schulz jindrichuv hradec;f. kabrt;3pt;jumpshot;0;63;59
+2517865;3;03:28:00;03:28;gba fruko-schulz jindrichuv hradec;c. bajema;substitution;out;1;63;59
+2517865;3;03:28:00;03:28;gba fruko-schulz jindrichuv hradec;n. kemm;substitution;in;1;63;59
+2517865;3;03:28:00;03:28;usk praha;f. fuxa;substitution;in;1;63;59
+2517865;3;03:28:00;03:28;usk praha;d. vlk;substitution;in;1;63;59
+2517865;3;03:28:00;03:28;usk praha;h. ibarguen mosquera;substitution;out;1;63;59
+2517865;3;03:28:00;03:28;usk praha;b. schilb;substitution;out;1;63;59
+2517865;3;03:28:00;03:28;gba fruko-schulz jindrichuv hradec;t. jansa;foulon;;1;63;59
+2517865;3;03:28:00;03:28;usk praha;h. ibarguen mosquera;turnover;offensive;1;63;59
+2517865;3;03:28:00;03:28;usk praha;h. ibarguen mosquera;foul;offensive;1;63;59
+2517865;3;03:44:00;03:44;usk praha;b. schilb;rebound;defensive;1;63;59
+2517865;3;03:44:00;03:44;gba fruko-schulz jindrichuv hradec;t. valentiny;freethrow;2of2;0;63;59
+2517865;3;03:44:00;03:44;gba fruko-schulz jindrichuv hradec;t. valentiny;freethrow;1of2;1;63;59
+2517865;3;03:44:00;03:44;gba fruko-schulz jindrichuv hradec;t. valentiny;foulon;;1;63;58
+2517865;3;03:44:00;03:44;usk praha;h. ibarguen mosquera;foul;personal;1;63;58
+2517865;3;03:46:00;03:46;gba fruko-schulz jindrichuv hradec;j. micka;rebound;offensive;1;63;58
+2517865;3;03:52:00;03:52;gba fruko-schulz jindrichuv hradec;c. bajema;3pt;jumpshot;0;63;58
+2517865;3;04:02:00;04:02;usk praha;m. safarik;freethrow;1of1;1;63;58
+2517865;3;04:02:00;04:02;usk praha;m. safarik;foulon;;1;62;58
+2517865;3;04:02:00;04:02;gba fruko-schulz jindrichuv hradec;t. jansa;foul;personal;1;62;58
+2517865;3;04:02:00;04:02;usk praha;m. safarik;2pt;drivinglayup;1;62;58
+2517865;3;04:21:00;04:21;gba fruko-schulz jindrichuv hradec;t. jansa;3pt;jumpshot;1;60;58
+2517865;3;04:28:00;04:28;gba fruko-schulz jindrichuv hradec;f. kabrt;rebound;defensive;1;60;55
+2517865;3;04:34:00;04:34;usk praha;m. safarik;3pt;jumpshot;0;60;55
+2517865;3;04:48:00;04:48;gba fruko-schulz jindrichuv hradec;j. fairweather;substitution;out;1;60;55
+2517865;3;04:48:00;04:48;gba fruko-schulz jindrichuv hradec;t. jansa;substitution;in;1;60;55
+2517865;3;04:48:00;04:48;usk praha;p. samoura;foulon;;1;60;55
+2517865;3;04:48:00;04:48;gba fruko-schulz jindrichuv hradec;j. fairweather;foul;personal;1;60;55
+2517865;3;05:10:00;05:10;gba fruko-schulz jindrichuv hradec;j. fairweather;3pt;pullupjumpshot;1;60;55
+2517865;3;05:26:00;05:26;usk praha;o. svec;freethrow;1of1;1;60;52
+2517865;3;05:26:00;05:26;gba fruko-schulz jindrichuv hradec;g. wiznitzer;substitution;out;1;59;52
+2517865;3;05:26:00;05:26;gba fruko-schulz jindrichuv hradec;j. micka;substitution;in;1;59;52
+2517865;3;05:26:00;05:26;usk praha;o. svec;foulon;;1;59;52
+2517865;3;05:26:00;05:26;gba fruko-schulz jindrichuv hradec;g. wiznitzer;foul;personal;1;59;52
+2517865;3;05:27:00;05:27;usk praha;o. svec;2pt;dunk;1;59;52
+2517865;3;05:32:00;05:32;usk praha;h. ibarguen mosquera;rebound;defensive;1;57;52
+2517865;3;05:34:00;05:34;usk praha;o. svec;block;;1;57;52
+2517865;3;05:34:00;05:34;gba fruko-schulz jindrichuv hradec;t. valentiny;2pt;layup;0;57;52
+2517865;3;05:40:00;05:40;usk praha;b. schilb;turnover;badpass;1;57;52
+2517865;3;05:43:00;05:43;usk praha;b. schilb;steal;;1;57;52
+2517865;3;05:43:00;05:43;gba fruko-schulz jindrichuv hradec;g. wiznitzer;turnover;badpass;1;57;52
+2517865;3;05:54:00;05:54;gba fruko-schulz jindrichuv hradec;g. wiznitzer;foulon;;1;57;52
+2517865;3;05:54:00;05:54;usk praha;m. safarik;foul;personal;1;57;52
+2517865;3;06:04:00;06:04;gba fruko-schulz jindrichuv hradec;c. bajema;foulon;;1;57;52
+2517865;3;06:04:00;06:04;usk praha;o. svec;foul;personal;1;57;52
+2517865;3;06:15:00;06:15;gba fruko-schulz jindrichuv hradec;c. bajema;rebound;defensive;1;57;52
+2517865;3;06:20:00;06:20;usk praha;h. ibarguen mosquera;2pt;jumpshot;0;57;52
+2517865;3;06:38:00;06:38;usk praha;j. campbell;substitution;out;1;57;52
+2517865;3;06:38:00;06:38;usk praha;m. safarik;substitution;in;1;57;52
+2517865;3;06:38:00;06:38;gba fruko-schulz jindrichuv hradec;c. bajema;freethrow;2of2;1;57;52
+2517865;3;06:38:00;06:38;gba fruko-schulz jindrichuv hradec;c. bajema;freethrow;1of2;0;57;51
+2517865;3;06:38:00;06:38;gba fruko-schulz jindrichuv hradec;l. festr;substitution;out;1;57;51
+2517865;3;06:38:00;06:38;gba fruko-schulz jindrichuv hradec;f. kabrt;substitution;in;1;57;51
+2517865;3;06:38:00;06:38;gba fruko-schulz jindrichuv hradec;c. bajema;foulon;;1;57;51
+2517865;3;06:38:00;06:38;usk praha;j. campbell;foul;personal;1;57;51
+2517865;3;06:42:00;06:42;gba fruko-schulz jindrichuv hradec;c. bajema;rebound;defensive;1;57;51
+2517865;3;06:46:00;06:46;usk praha;b. schilb;3pt;jumpshot;0;57;51
+2517865;3;07:06:00;07:06;gba fruko-schulz jindrichuv hradec;j. fairweather;assist;;1;57;51
+2517865;3;07:06:00;07:06;gba fruko-schulz jindrichuv hradec;c. bajema;2pt;layup;1;57;51
+2517865;3;07:15:00;07:15;gba fruko-schulz jindrichuv hradec;g. wiznitzer;rebound;defensive;1;57;49
+2517865;3;07:19:00;07:19;usk praha;j. campbell;3pt;jumpshot;0;57;49
+2517865;3;07:24:00;07:24;usk praha;b. schilb;steal;;1;57;49
+2517865;3;07:24:00;07:24;gba fruko-schulz jindrichuv hradec;j. fairweather;turnover;ballhandling;1;57;49
+2517865;3;07:36:00;07:36;gba fruko-schulz jindrichuv hradec;c. bajema;foulon;;1;57;49
+2517865;3;07:36:00;07:36;usk praha;p. samoura;foul;personal;1;57;49
+2517865;3;07:45:00;07:45;usk praha;b. schilb;3pt;jumpshot;1;57;49
+2517865;3;07:49:00;07:49;usk praha;b. schilb;steal;;1;54;49
+2517865;3;07:49:00;07:49;gba fruko-schulz jindrichuv hradec;j. fairweather;turnover;badpass;1;54;49
+2517865;3;07:58:00;07:58;gba fruko-schulz jindrichuv hradec;t. valentiny;rebound;defensive;1;54;49
+2517865;3;08:00:00;08:00;usk praha;p. samoura;2pt;layup;0;54;49
+2517865;3;08:21:00;08:21;gba fruko-schulz jindrichuv hradec;j. fairweather;assist;;1;54;49
+2517865;3;08:21:00;08:21;gba fruko-schulz jindrichuv hradec;l. festr;3pt;jumpshot;1;54;49
+2517865;3;08:44:00;08:44;usk praha;o. svec;assist;;1;54;46
+2517865;3;08:44:00;08:44;usk praha;j. campbell;3pt;jumpshot;1;54;46
+2517865;3;09:01:00;09:01;gba fruko-schulz jindrichuv hradec;c. bajema;assist;;1;51;46
+2517865;3;09:01:00;09:01;gba fruko-schulz jindrichuv hradec;l. festr;3pt;jumpshot;1;51;46
+2517865;3;09:02:00;09:02;gba fruko-schulz jindrichuv hradec;g. wiznitzer;rebound;offensive;1;51;43
+2517865;3;09:06:00;09:06;gba fruko-schulz jindrichuv hradec;j. fairweather;3pt;jumpshot;0;51;43
+2517865;3;09:12:00;09:12;gba fruko-schulz jindrichuv hradec;c. bajema;steal;;1;51;43
+2517865;3;09:12:00;09:12;usk praha;j. campbell;turnover;badpass;1;51;43
+2517865;3;09:15:00;09:15;usk praha;h. ibarguen mosquera;rebound;defensive;1;51;43
+2517865;3;09:18:00;09:18;usk praha;h. ibarguen mosquera;block;;1;51;43
+2517865;3;09:18:00;09:18;gba fruko-schulz jindrichuv hradec;j. fairweather;2pt;layup;0;51;43
+2517865;3;09:27:00;09:27;usk praha;o. svec;assist;;1;51;43
+2517865;3;09:27:00;09:27;usk praha;h. ibarguen mosquera;2pt;dunk;1;51;43
+2517865;3;09:42:00;09:42;gba fruko-schulz jindrichuv hradec;l. festr;assist;;1;49;43
+2517865;3;09:42:00;09:42;gba fruko-schulz jindrichuv hradec;g. wiznitzer;2pt;layup;1;49;43
+2517865;3;09:50:00;09:50;gba fruko-schulz jindrichuv hradec;j. fairweather;steal;;1;49;41
+2517865;3;09:50:00;09:50;usk praha;h. ibarguen mosquera;turnover;badpass;1;49;41
+2517865;3;10:00:00;10:00;;;period;start;1;49;41
+2517865;3;10:00:00;10:00;gba fruko-schulz jindrichuv hradec;l. festr;substitution;in;1;49;41
+2517865;3;10:00:00;10:00;gba fruko-schulz jindrichuv hradec;g. wiznitzer;substitution;in;1;49;41
+2517865;3;10:00:00;10:00;gba fruko-schulz jindrichuv hradec;n. kemm;substitution;out;1;49;41
+2517865;3;10:00:00;10:00;gba fruko-schulz jindrichuv hradec;f. kabrt;substitution;out;1;49;41
+2517865;3;10:00:00;10:00;usk praha;b. schilb;substitution;in;1;49;41
+2517865;3;10:00:00;10:00;usk praha;j. campbell;substitution;in;1;49;41
+2517865;3;10:00:00;10:00;usk praha;j. bruce;substitution;out;1;49;41
+2517865;3;10:00:00;10:00;usk praha;m. safarik;substitution;out;1;49;41
+2517865;2;00:00:00;00:00;;;period;end;1;49;41
+2517865;2;00:00:00;00:00;usk praha;;rebound;defensive;1;49;41
+2517865;2;00:07:10;00:07;gba fruko-schulz jindrichuv hradec;c. bajema;3pt;jumpshot;0;49;41
+2517865;2;00:16:70;00:16;usk praha;m. jezek;substitution;out;1;49;41
+2517865;2;00:16:70;00:16;usk praha;j. bruce;substitution;in;1;49;41
+2517865;2;00:16:70;00:16;gba fruko-schulz jindrichuv hradec;;jumpball;heldball;1;49;41
+2517865;2;00:23:60;00:23;gba fruko-schulz jindrichuv hradec;j. micka;substitution;out;1;49;41
+2517865;2;00:23:60;00:23;gba fruko-schulz jindrichuv hradec;j. fairweather;substitution;in;1;49;41
+2517865;2;00:23:60;00:23;usk praha;h. ibarguen mosquera;substitution;in;1;49;41
+2517865;2;00:23:60;00:23;usk praha;m. jezek;substitution;in;1;49;41
+2517865;2;00:23:60;00:23;usk praha;b. schilb;substitution;out;1;49;41
+2517865;2;00:23:60;00:23;usk praha;o. svec;substitution;in;1;49;41
+2517865;2;00:23:60;00:23;usk praha;j. bruce;substitution;out;1;49;41
+2517865;2;00:23:60;00:23;usk praha;d. vlk;substitution;out;1;49;41
+2517865;2;00:23:60;00:23;gba fruko-schulz jindrichuv hradec;;timeout;full;1;49;41
+2517865;2;00:27:20;00:27;usk praha;b. schilb;3pt;pullupjumpshot;1;49;41
+2517865;2;00:35:20;00:35;usk praha;p. samoura;rebound;offensive;1;46;41
+2517865;2;00:38:50;00:38;usk praha;b. schilb;3pt;jumpshot;0;46;41
+2517865;2;00:40:00;00:40;usk praha;d. vlk;rebound;offensive;1;46;41
+2517865;2;00:42:80;00:42;usk praha;d. vlk;2pt;layup;0;46;41
+2517865;2;00:47:40;00:47;usk praha;b. schilb;rebound;defensive;1;46;41
+2517865;2;00:49:50;00:49;gba fruko-schulz jindrichuv hradec;c. bajema;2pt;layup;0;46;41
+2517865;2;01:10:00;01:10;usk praha;d. vlk;2pt;drivinglayup;1;46;41
+2517865;2;01:14:00;01:14;usk praha;p. samoura;rebound;offensive;1;44;41
+2517865;2;01:14:00;01:14;usk praha;;jumpball;heldball;1;44;41
+2517865;2;01:14:00;01:14;usk praha;p. samoura;2pt;layup;0;44;41
+2517865;2;01:23:00;01:23;usk praha;;timeout;full;1;44;41
+2517865;2;01:23:00;01:23;gba fruko-schulz jindrichuv hradec;j. fairweather;substitution;out;1;44;41
+2517865;2;01:23:00;01:23;gba fruko-schulz jindrichuv hradec;f. kabrt;substitution;in;1;44;41
+2517865;2;01:23:00;01:23;usk praha;d. vlk;rebound;offensive;1;44;41
+2517865;2;01:26:00;01:26;usk praha;j. bruce;2pt;layup;0;44;41
+2517865;2;01:43:00;01:43;usk praha;p. samoura;rebound;defensive;1;44;41
+2517865;2;01:46:00;01:46;gba fruko-schulz jindrichuv hradec;j. fairweather;3pt;jumpshot;0;44;41
+2517865;2;01:53:00;01:53;gba fruko-schulz jindrichuv hradec;j. fairweather;rebound;defensive;1;44;41
+2517865;2;01:58:00;01:58;usk praha;m. safarik;3pt;jumpshot;0;44;41
+2517865;2;02:10:00;02:10;usk praha;j. bruce;rebound;defensive;1;44;41
+2517865;2;02:10:00;02:10;gba fruko-schulz jindrichuv hradec;j. fairweather;freethrow;2of2;0;44;41
+2517865;2;02:10:00;02:10;gba fruko-schulz jindrichuv hradec;j. fairweather;freethrow;1of2;0;44;41
+2517865;2;02:10:00;02:10;usk praha;o. svec;substitution;out;1;44;41
+2517865;2;02:10:00;02:10;usk praha;p. samoura;substitution;in;1;44;41
+2517865;2;02:10:00;02:10;gba fruko-schulz jindrichuv hradec;j. fairweather;foulon;;1;44;41
+2517865;2;02:10:00;02:10;usk praha;m. safarik;foul;personal;1;44;41
+2517865;2;02:11:00;02:11;gba fruko-schulz jindrichuv hradec;j. fairweather;rebound;defensive;1;44;41
+2517865;2;02:15:00;02:15;usk praha;o. svec;3pt;jumpshot;0;44;41
+2517865;2;02:17:00;02:17;usk praha;m. safarik;rebound;offensive;1;44;41
+2517865;2;02:20:00;02:20;usk praha;d. vlk;3pt;jumpshot;0;44;41
+2517865;2;02:37:00;02:37;gba fruko-schulz jindrichuv hradec;j. fairweather;freethrow;2of2;1;44;41
+2517865;2;02:37:00;02:37;gba fruko-schulz jindrichuv hradec;j. fairweather;freethrow;1of2;1;44;40
+2517865;2;02:37:00;02:37;gba fruko-schulz jindrichuv hradec;j. fairweather;foulon;;1;44;39
+2517865;2;02:37:00;02:37;usk praha;j. bruce;foul;personal;1;44;39
+2517865;2;02:59:00;02:59;usk praha;f. fuxa;substitution;out;1;44;39
+2517865;2;02:59:00;02:59;usk praha;b. schilb;substitution;in;1;44;39
+2517865;2;02:59:00;02:59;gba fruko-schulz jindrichuv hradec;n. kemm;foulon;;1;44;39
+2517865;2;02:59:00;02:59;usk praha;f. fuxa;turnover;offensive;1;44;39
+2517865;2;02:59:00;02:59;usk praha;f. fuxa;foul;offensive;1;44;39
+2517865;2;03:18:00;03:18;gba fruko-schulz jindrichuv hradec;n. kemm;freethrow;2of2;1;44;39
+2517865;2;03:18:00;03:18;gba fruko-schulz jindrichuv hradec;n. kemm;freethrow;1of2;1;44;38
+2517865;2;03:18:00;03:18;gba fruko-schulz jindrichuv hradec;l. festr;substitution;out;1;44;37
+2517865;2;03:18:00;03:18;gba fruko-schulz jindrichuv hradec;c. bajema;substitution;in;1;44;37
+2517865;2;03:18:00;03:18;gba fruko-schulz jindrichuv hradec;n. kemm;foulon;;1;44;37
+2517865;2;03:18:00;03:18;usk praha;f. fuxa;foul;personal;1;44;37
+2517865;2;03:31:00;03:31;usk praha;f. fuxa;assist;;1;44;37
+2517865;2;03:31:00;03:31;usk praha;o. svec;2pt;layup;1;44;37
+2517865;2;03:38:00;03:38;usk praha;;rebound;defensive;1;42;37
+2517865;2;03:40:00;03:40;gba fruko-schulz jindrichuv hradec;l. festr;2pt;jumpshot;0;42;37
+2517865;2;04:03:00;04:03;usk praha;j. campbell;substitution;out;1;42;37
+2517865;2;04:03:00;04:03;usk praha;j. bruce;substitution;in;1;42;37
+2517865;2;04:03:00;04:03;usk praha;j. campbell;freethrow;2of2;1;42;37
+2517865;2;04:03:00;04:03;usk praha;j. campbell;freethrow;1of2;1;41;37
+2517865;2;04:03:00;04:03;gba fruko-schulz jindrichuv hradec;m. zvolanek;substitution;out;1;40;37
+2517865;2;04:03:00;04:03;gba fruko-schulz jindrichuv hradec;t. valentiny;substitution;in;1;40;37
+2517865;2;04:03:00;04:03;usk praha;h. ibarguen mosquera;substitution;out;1;40;37
+2517865;2;04:03:00;04:03;usk praha;f. fuxa;substitution;in;1;40;37
+2517865;2;04:03:00;04:03;usk praha;j. campbell;foulon;;1;40;37
+2517865;2;04:03:00;04:03;gba fruko-schulz jindrichuv hradec;n. kemm;foul;personal;1;40;37
+2517865;2;04:21:00;04:21;gba fruko-schulz jindrichuv hradec;l. festr;turnover;ballhandling;1;40;37
+2517865;2;04:39:00;04:39;usk praha;o. svec;freethrow;2of2;1;40;37
+2517865;2;04:39:00;04:39;usk praha;o. svec;freethrow;1of2;1;39;37
+2517865;2;04:39:00;04:39;gba fruko-schulz jindrichuv hradec;;timeout;full;1;38;37
+2517865;2;04:39:00;04:39;usk praha;o. svec;foulon;;1;38;37
+2517865;2;04:39:00;04:39;gba fruko-schulz jindrichuv hradec;j. fairweather;foul;personal;1;38;37
+2517865;2;04:56:00;04:56;gba fruko-schulz jindrichuv hradec;l. festr;assist;;1;38;37
+2517865;2;04:56:00;04:56;gba fruko-schulz jindrichuv hradec;n. kemm;3pt;jumpshot;1;38;37
+2517865;2;04:56:00;04:56;gba fruko-schulz jindrichuv hradec;j. micka;rebound;offensive;1;38;34
+2517865;2;04:56:00;04:56;gba fruko-schulz jindrichuv hradec;j. fairweather;3pt;jumpshot;0;38;34
+2517865;2;04:56:00;04:56;usk praha;d. vlk;freethrow;1of1;1;38;34
+2517865;2;04:56:00;04:56;gba fruko-schulz jindrichuv hradec;c. bajema;substitution;out;1;37;34
+2517865;2;04:56:00;04:56;gba fruko-schulz jindrichuv hradec;m. zvolanek;substitution;in;1;37;34
+2517865;2;04:56:00;04:56;usk praha;d. vlk;foulon;;1;37;34
+2517865;2;04:56:00;04:56;gba fruko-schulz jindrichuv hradec;c. bajema;foul;personal;1;37;34
+2517865;2;04:56:00;04:56;usk praha;d. vlk;2pt;drivinglayup;1;37;34
+2517865;2;05:02:00;05:02;usk praha;p. samoura;substitution;out;1;35;34
+2517865;2;05:02:00;05:02;usk praha;m. safarik;substitution;in;1;35;34
+2517865;2;05:02:00;05:02;gba fruko-schulz jindrichuv hradec;f. kabrt;substitution;out;1;35;34
+2517865;2;05:02:00;05:02;gba fruko-schulz jindrichuv hradec;n. kemm;substitution;in;1;35;34
+2517865;2;05:02:00;05:02;usk praha;b. schilb;substitution;out;1;35;34
+2517865;2;05:02:00;05:02;usk praha;d. vlk;substitution;in;1;35;34
+2517865;2;05:02:00;05:02;usk praha;j. campbell;foulon;;1;35;34
+2517865;2;05:02:00;05:02;gba fruko-schulz jindrichuv hradec;f. kabrt;foul;personal;1;35;34
+2517865;2;05:25:00;05:25;gba fruko-schulz jindrichuv hradec;j. fairweather;assist;;1;35;34
+2517865;2;05:25:00;05:25;gba fruko-schulz jindrichuv hradec;f. kabrt;2pt;layup;1;35;34
+2517865;2;05:38:00;05:38;gba fruko-schulz jindrichuv hradec;l. festr;rebound;defensive;1;35;32
+2517865;2;05:41:00;05:41;usk praha;b. schilb;3pt;jumpshot;0;35;32
+2517865;2;05:46:00;05:46;usk praha;j. campbell;rebound;defensive;1;35;32
+2517865;2;05:50:00;05:50;gba fruko-schulz jindrichuv hradec;j. micka;3pt;jumpshot;0;35;32
+2517865;2;06:05:00;06:05;usk praha;o. svec;assist;;1;35;32
+2517865;2;06:05:00;06:05;usk praha;j. campbell;3pt;jumpshot;1;35;32
+2517865;2;06:14:00;06:14;gba fruko-schulz jindrichuv hradec;f. kabrt;freethrow;2of2;1;32;32
+2517865;2;06:14:00;06:14;gba fruko-schulz jindrichuv hradec;f. kabrt;freethrow;1of2;1;32;31
+2517865;2;06:14:00;06:14;gba fruko-schulz jindrichuv hradec;f. kabrt;foulon;;1;32;30
+2517865;2;06:14:00;06:14;usk praha;j. campbell;foul;personal;1;32;30
+2517865;2;06:15:00;06:15;gba fruko-schulz jindrichuv hradec;f. kabrt;rebound;defensive;1;32;30
+2517865;2;06:17:00;06:17;usk praha;h. ibarguen mosquera;2pt;dunk;0;32;30
+2517865;2;06:37:00;06:37;gba fruko-schulz jindrichuv hradec;j. fairweather;freethrow;2of2;1;32;30
+2517865;2;06:37:00;06:37;gba fruko-schulz jindrichuv hradec;j. fairweather;freethrow;1of2;0;32;29
+2517865;2;06:37:00;06:37;gba fruko-schulz jindrichuv hradec;t. valentiny;substitution;out;1;32;29
+2517865;2;06:37:00;06:37;gba fruko-schulz jindrichuv hradec;l. festr;substitution;in;1;32;29
+2517865;2;06:37:00;06:37;gba fruko-schulz jindrichuv hradec;j. fairweather;foulon;;1;32;29
+2517865;2;06:37:00;06:37;usk praha;j. campbell;foul;personal;1;32;29
+2517865;2;06:42:00;06:42;gba fruko-schulz jindrichuv hradec;j. fairweather;steal;;1;32;29
+2517865;2;06:42:00;06:42;usk praha;b. schilb;turnover;ballhandling;1;32;29
+2517865;2;07:10:00;07:10;gba fruko-schulz jindrichuv hradec;f. kabrt;assist;;1;32;29
+2517865;2;07:10:00;07:10;gba fruko-schulz jindrichuv hradec;t. valentiny;3pt;jumpshot;1;32;29
+2517865;2;07:19:00;07:19;gba fruko-schulz jindrichuv hradec;c. bajema;rebound;defensive;1;32;26
+2517865;2;07:22:00;07:22;usk praha;h. ibarguen mosquera;2pt;layup;0;32;26
+2517865;2;07:23:00;07:23;usk praha;h. ibarguen mosquera;rebound;offensive;1;32;26
+2517865;2;07:23:00;07:23;usk praha;o. svec;freethrow;2of2;0;32;26
+2517865;2;07:23:00;07:23;usk praha;o. svec;freethrow;1of2;0;32;26
+2517865;2;07:52:00;07:52;gba fruko-schulz jindrichuv hradec;g. wiznitzer;substitution;out;1;32;26
+2517865;2;07:52:00;07:52;gba fruko-schulz jindrichuv hradec;j. micka;substitution;in;1;32;26
+2517865;2;08:03:00;08:03;usk praha;o. svec;foulon;;1;32;26
+2517865;2;08:03:00;08:03;gba fruko-schulz jindrichuv hradec;g. wiznitzer;foul;personal;1;32;26
+2517865;2;08:04:00;08:04;gba fruko-schulz jindrichuv hradec;j. fairweather;2pt;pullupjumpshot;1;32;26
+2517865;2;08:04:00;08:04;gba fruko-schulz jindrichuv hradec;f. kabrt;rebound;offensive;1;32;24
+2517865;2;08:04:00;08:04;gba fruko-schulz jindrichuv hradec;c. bajema;3pt;jumpshot;0;32;24
+2517865;2;08:05:00;08:05;gba fruko-schulz jindrichuv hradec;j. fairweather;foulon;;1;32;24
+2517865;2;08:05:00;08:05;usk praha;p. samoura;foul;personal;1;32;24
+2517865;2;08:12:00;08:12;usk praha;o. svec;substitution;in;1;32;24
+2517865;2;08:12:00;08:12;usk praha;j. campbell;substitution;in;1;32;24
+2517865;2;08:12:00;08:12;usk praha;m. safarik;substitution;out;1;32;24
+2517865;2;08:12:00;08:12;usk praha;f. fuxa;substitution;out;1;32;24
+2517865;2;08:12:00;08:12;usk praha;h. ibarguen mosquera;turnover;travel;1;32;24
+2517865;2;08:24:00;08:24;gba fruko-schulz jindrichuv hradec;j. fairweather;2pt;stepbackjumpshot;1;32;24
+2517865;2;08:44:00;08:44;gba fruko-schulz jindrichuv hradec;;rebound;defensive;1;32;22
+2517865;2;08:48:00;08:48;usk praha;b. schilb;3pt;jumpshot;0;32;22
+2517865;2;09:03:00;09:03;gba fruko-schulz jindrichuv hradec;t. jansa;substitution;out;1;32;22
+2517865;2;09:03:00;09:03;gba fruko-schulz jindrichuv hradec;f. kabrt;substitution;in;1;32;22
+2517865;2;09:03:00;09:03;usk praha;m. safarik;foulon;;1;32;22
+2517865;2;09:03:00;09:03;gba fruko-schulz jindrichuv hradec;g. wiznitzer;turnover;offensive;1;32;22
+2517865;2;09:03:00;09:03;gba fruko-schulz jindrichuv hradec;g. wiznitzer;foul;offensive;1;32;22
+2517865;2;09:19:00;09:19;usk praha;m. safarik;assist;;1;32;22
+2517865;2;09:19:00;09:19;usk praha;h. ibarguen mosquera;2pt;dunk;1;32;22
+2517865;2;09:39:00;09:39;gba fruko-schulz jindrichuv hradec;;turnover;24sec;1;30;22
+2517865;2;10:00:00;10:00;;;period;start;1;30;22
+2517865;2;10:00:00;10:00;gba fruko-schulz jindrichuv hradec;g. wiznitzer;substitution;in;1;30;22
+2517865;2;10:00:00;10:00;gba fruko-schulz jindrichuv hradec;c. bajema;substitution;in;1;30;22
+2517865;2;10:00:00;10:00;gba fruko-schulz jindrichuv hradec;f. kabrt;substitution;out;1;30;22
+2517865;2;10:00:00;10:00;gba fruko-schulz jindrichuv hradec;m. zvolanek;substitution;out;1;30;22
+2517865;2;10:00:00;10:00;usk praha;b. schilb;substitution;in;1;30;22
+2517865;2;10:00:00;10:00;usk praha;h. ibarguen mosquera;substitution;in;1;30;22
+2517865;2;10:00:00;10:00;usk praha;j. bruce;substitution;out;1;30;22
+2517865;2;10:00:00;10:00;usk praha;d. vlk;substitution;out;1;30;22
+2517865;1;00:00:00;00:00;;;period;end;1;30;22
+2517865;1;00:07:20;00:07;usk praha;m. safarik;2pt;drivinglayup;1;30;22
+2517865;1;00:18:50;00:18;gba fruko-schulz jindrichuv hradec;j. fairweather;2pt;drivinglayup;1;28;22
+2517865;1;00:38:70;00:38;usk praha;j. bruce;freethrow;1of1;1;28;20
+2517865;1;00:38:70;00:38;usk praha;j. bruce;foulon;;1;27;20
+2517865;1;00:38:70;00:38;gba fruko-schulz jindrichuv hradec;m. zvolanek;foul;personal;1;27;20
+2517865;1;00:38:70;00:38;usk praha;j. bruce;2pt;layup;1;27;20
+2517865;1;00:40:80;00:40;usk praha;j. bruce;rebound;offensive;1;25;20
+2517865;1;00:40:80;00:40;usk praha;p. samoura;freethrow;2of2;0;25;20
+2517865;1;00:40:80;00:40;usk praha;p. samoura;freethrow;1of2;0;25;20
+2517865;1;00:40:80;00:40;gba fruko-schulz jindrichuv hradec;c. bajema;substitution;out;1;25;20
+2517865;1;00:40:80;00:40;gba fruko-schulz jindrichuv hradec;t. valentiny;substitution;in;1;25;20
+2517865;1;00:40:80;00:40;gba fruko-schulz jindrichuv hradec;j. micka;substitution;out;1;25;20
+2517865;1;00:40:80;00:40;gba fruko-schulz jindrichuv hradec;m. zvolanek;substitution;in;1;25;20
+2517865;1;00:40:80;00:40;gba fruko-schulz jindrichuv hradec;n. kemm;substitution;out;1;25;20
+2517865;1;00:40:80;00:40;gba fruko-schulz jindrichuv hradec;j. fairweather;substitution;in;1;25;20
+2517865;1;00:40:80;00:40;usk praha;p. samoura;foulon;;1;25;20
+2517865;1;00:40:80;00:40;gba fruko-schulz jindrichuv hradec;c. bajema;foul;personal;1;25;20
+2517865;1;00:47:50;00:47;usk praha;p. samoura;rebound;defensive;1;25;20
+2517865;1;00:53:80;00:53;gba fruko-schulz jindrichuv hradec;j. fairweather;3pt;jumpshot;0;25;20
+2517865;1;00:55:00;00:55;gba fruko-schulz jindrichuv hradec;t. jansa;rebound;offensive;1;25;20
+2517865;1;01:00:00;01:00;gba fruko-schulz jindrichuv hradec;t. jansa;3pt;jumpshot;0;25;20
+2517865;1;01:09:00;01:09;usk praha;m. safarik;freethrow;2of2;1;25;20
+2517865;1;01:09:00;01:09;usk praha;m. safarik;freethrow;1of2;1;24;20
+2517865;1;01:09:00;01:09;usk praha;m. safarik;foulon;;1;23;20
+2517865;1;01:09:00;01:09;gba fruko-schulz jindrichuv hradec;j. micka;foul;personal;1;23;20
+2517865;1;01:17:00;01:17;gba fruko-schulz jindrichuv hradec;c. bajema;assist;;1;23;20
+2517865;1;01:17:00;01:17;gba fruko-schulz jindrichuv hradec;f. kabrt;2pt;dunk;1;23;20
+2517865;1;01:34:00;01:34;gba fruko-schulz jindrichuv hradec;n. kemm;steal;;1;23;18
+2517865;1;01:34:00;01:34;usk praha;j. bruce;turnover;badpass;1;23;18
+2517865;1;01:40:00;01:40;gba fruko-schulz jindrichuv hradec;c. bajema;2pt;layup;1;23;18
+2517865;1;01:43:00;01:43;gba fruko-schulz jindrichuv hradec;c. bajema;steal;;1;23;16
+2517865;1;01:43:00;01:43;usk praha;j. bruce;turnover;ballhandling;1;23;16
+2517865;1;02:03:00;02:03;gba fruko-schulz jindrichuv hradec;j. micka;2pt;jumpshot;1;23;16
+2517865;1;02:28:00;02:28;usk praha;f. fuxa;2pt;layup;1;23;14
+2517865;1;02:38:00;02:38;usk praha;d. vlk;foulon;;1;21;14
+2517865;1;02:38:00;02:38;gba fruko-schulz jindrichuv hradec;j. micka;foul;personal;1;21;14
+2517865;1;02:38:00;02:38;usk praha;d. vlk;rebound;offensive;1;21;14
+2517865;1;02:39:00;02:39;usk praha;d. vlk;2pt;layup;0;21;14
+2517865;1;02:59:00;02:59;gba fruko-schulz jindrichuv hradec;t. valentiny;substitution;out;1;21;14
+2517865;1;02:59:00;02:59;gba fruko-schulz jindrichuv hradec;t. jansa;substitution;in;1;21;14
+2517865;1;02:59:00;02:59;usk praha;p. samoura;substitution;in;1;21;14
+2517865;1;02:59:00;02:59;usk praha;j. bruce;substitution;in;1;21;14
+2517865;1;02:59:00;02:59;usk praha;j. campbell;substitution;out;1;21;14
+2517865;1;02:59:00;02:59;usk praha;o. svec;substitution;out;1;21;14
+2517865;1;02:59:00;02:59;gba fruko-schulz jindrichuv hradec;;turnover;24sec;1;21;14
+2517865;1;03:09:00;03:09;gba fruko-schulz jindrichuv hradec;t. valentiny;rebound;offensive;1;21;14
+2517865;1;03:12:00;03:12;gba fruko-schulz jindrichuv hradec;t. valentiny;3pt;jumpshot;0;21;14
+2517865;1;03:13:00;03:13;gba fruko-schulz jindrichuv hradec;t. valentiny;rebound;offensive;1;21;14
+2517865;1;03:16:00;03:16;gba fruko-schulz jindrichuv hradec;t. valentiny;3pt;jumpshot;0;21;14
+2517865;1;03:33:00;03:33;usk praha;j. campbell;2pt;drivinglayup;1;21;14
+2517865;1;03:35:00;03:35;usk praha;j. campbell;rebound;defensive;1;19;14
+2517865;1;03:38:00;03:38;gba fruko-schulz jindrichuv hradec;t. valentiny;2pt;layup;0;19;14
+2517865;1;03:39:00;03:39;gba fruko-schulz jindrichuv hradec;;rebound;offensive;1;19;14
+2517865;1;03:39:00;03:39;usk praha;j. campbell;block;;1;19;14
+2517865;1;03:39:00;03:39;gba fruko-schulz jindrichuv hradec;c. bajema;2pt;layup;0;19;14
+2517865;1;03:57:00;03:57;usk praha;m. safarik;2pt;drivinglayup;1;19;14
+2517865;1;04:04:00;04:04;usk praha;m. safarik;rebound;defensive;1;17;14
+2517865;1;04:07:00;04:07;gba fruko-schulz jindrichuv hradec;f. kabrt;3pt;jumpshot;0;17;14
+2517865;1;04:14:00;04:14;gba fruko-schulz jindrichuv hradec;;rebound;offensive;1;17;14
+2517865;1;04:17:00;04:17;gba fruko-schulz jindrichuv hradec;n. kemm;2pt;jumpshot;0;17;14
+2517865;1;04:32:00;04:32;gba fruko-schulz jindrichuv hradec;j. micka;substitution;in;1;17;14
+2517865;1;04:32:00;04:32;gba fruko-schulz jindrichuv hradec;f. kabrt;substitution;in;1;17;14
+2517865;1;04:32:00;04:32;gba fruko-schulz jindrichuv hradec;l. festr;substitution;out;1;17;14
+2517865;1;04:32:00;04:32;gba fruko-schulz jindrichuv hradec;n. kemm;substitution;in;1;17;14
+2517865;1;04:32:00;04:32;gba fruko-schulz jindrichuv hradec;j. fairweather;substitution;out;1;17;14
+2517865;1;04:32:00;04:32;gba fruko-schulz jindrichuv hradec;g. wiznitzer;substitution;out;1;17;14
+2517865;1;04:32:00;04:32;usk praha;h. ibarguen mosquera;substitution;out;1;17;14
+2517865;1;04:32:00;04:32;usk praha;f. fuxa;substitution;in;1;17;14
+2517865;1;04:32:00;04:32;usk praha;;turnover;24sec;1;17;14
+2517865;1;04:46:00;04:46;usk praha;j. campbell;rebound;offensive;1;17;14
+2517865;1;04:48:00;04:48;usk praha;j. campbell;3pt;jumpshot;0;17;14
+2517865;1;04:55:00;04:55;usk praha;o. svec;rebound;defensive;1;17;14
+2517865;1;04:58:00;04:58;gba fruko-schulz jindrichuv hradec;l. festr;3pt;jumpshot;0;17;14
+2517865;1;05:04:00;05:04;usk praha;j. campbell;3pt;jumpshot;1;17;14
+2517865;1;05:19:00;05:19;gba fruko-schulz jindrichuv hradec;j. fairweather;assist;;1;14;14
+2517865;1;05:19:00;05:19;gba fruko-schulz jindrichuv hradec;l. festr;3pt;jumpshot;1;14;14
+2517865;1;05:44:00;05:44;usk praha;h. ibarguen mosquera;2pt;dunk;1;14;11
+2517865;1;05:44:00;05:44;usk praha;h. ibarguen mosquera;rebound;offensive;1;12;11
+2517865;1;05:49:00;05:49;usk praha;m. safarik;2pt;layup;0;12;11
+2517865;1;05:56:00;05:56;usk praha;d. vlk;substitution;in;1;12;11
+2517865;1;05:56:00;05:56;usk praha;m. safarik;substitution;in;1;12;11
+2517865;1;05:56:00;05:56;usk praha;p. samoura;substitution;out;1;12;11
+2517865;1;05:56:00;05:56;usk praha;b. schilb;substitution;out;1;12;11
+2517865;1;05:56:00;05:56;usk praha;j. campbell;foulon;;1;12;11
+2517865;1;05:56:00;05:56;gba fruko-schulz jindrichuv hradec;g. wiznitzer;foul;personal;1;12;11
+2517865;1;06:07:00;06:07;usk praha;p. samoura;rebound;defensive;1;12;11
+2517865;1;06:09:00;06:09;gba fruko-schulz jindrichuv hradec;g. wiznitzer;2pt;layup;0;12;11
+2517865;1;06:22:00;06:22;gba fruko-schulz jindrichuv hradec;j. fairweather;rebound;defensive;1;12;11
+2517865;1;06:26:00;06:26;usk praha;b. schilb;3pt;jumpshot;0;12;11
+2517865;1;06:44:00;06:44;gba fruko-schulz jindrichuv hradec;j. fairweather;assist;;1;12;11
+2517865;1;06:44:00;06:44;gba fruko-schulz jindrichuv hradec;c. bajema;3pt;jumpshot;1;12;11
+2517865;1;06:56:00;06:56;usk praha;b. schilb;assist;;1;12;8
+2517865;1;06:56:00;06:56;usk praha;h. ibarguen mosquera;2pt;dunk;1;12;8
+2517865;1;07:07:00;07:07;gba fruko-schulz jindrichuv hradec;g. wiznitzer;turnover;outofbounds;1;10;8
+2517865;1;07:22:00;07:22;usk praha;p. samoura;3pt;jumpshot;1;10;8
+2517865;1;07:34:00;07:34;usk praha;o. svec;foulon;;1;7;8
+2517865;1;07:34:00;07:34;gba fruko-schulz jindrichuv hradec;j. fairweather;foul;personal;1;7;8
+2517865;1;07:57:00;07:57;gba fruko-schulz jindrichuv hradec;t. valentiny;assist;;1;7;8
+2517865;1;07:57:00;07:57;gba fruko-schulz jindrichuv hradec;l. festr;3pt;jumpshot;1;7;8
+2517865;1;08:00:00;08:00;gba fruko-schulz jindrichuv hradec;j. fairweather;rebound;defensive;1;7;5
+2517865;1;08:03:00;08:03;gba fruko-schulz jindrichuv hradec;g. wiznitzer;block;;1;7;5
+2517865;1;08:03:00;08:03;usk praha;o. svec;2pt;layup;0;7;5
+2517865;1;08:14:00;08:14;gba fruko-schulz jindrichuv hradec;j. fairweather;2pt;drivinglayup;1;7;5
+2517865;1;08:35:00;08:35;usk praha;b. schilb;assist;;1;7;3
+2517865;1;08:35:00;08:35;usk praha;h. ibarguen mosquera;2pt;layup;1;7;3
+2517865;1;08:41:00;08:41;usk praha;o. svec;steal;;1;5;3
+2517865;1;08:41:00;08:41;gba fruko-schulz jindrichuv hradec;g. wiznitzer;turnover;badpass;1;5;3
+2517865;1;09:04:00;09:04;usk praha;b. schilb;assist;;1;5;3
+2517865;1;09:04:00;09:04;usk praha;j. campbell;3pt;jumpshot;1;5;3
+2517865;1;09:23:00;09:23;gba fruko-schulz jindrichuv hradec;c. bajema;assist;;1;2;3
+2517865;1;09:23:00;09:23;gba fruko-schulz jindrichuv hradec;j. fairweather;3pt;jumpshot;1;2;3
+2517865;1;09:51:00;09:51;usk praha;o. svec;2pt;drivinglayup;1;2;0
+2517865;1;09:59:00;09:59;gba fruko-schulz jindrichuv hradec;t. valentiny;jumpball;lost;1;0;0
+2517865;1;09:59:00;09:59;usk praha;h. ibarguen mosquera;jumpball;won;1;0;0
+2517865;1;10:00:00;10:00;;;jumpball;startperiod;1;0;0
+2517865;1;10:00:00;10:00;;;period;start;1;0;0
+2517865;1;10:00:00;10:00;;;game;start;1;0;0
+2309844;1;00:00:00;00:00;;;game;end;1;96;102
+2309844;1;00:00:00;00:00;;;period;end;1;96;102
+2309844;1;00:00:00;00:00;bk opava;j. slavik;rebound;defensive;1;96;102
+2309844;1;00:01:00;00:01;nh ostrava;e. williams;3pt;jumpshot;0;96;102
+2309844;1;00:12:70;00:12;bk opava;j. sirina;freethrow;2of2;1;96;102
+2309844;1;00:12:70;00:12;bk opava;j. sirina;freethrow;1of2;1;96;101
+2309844;1;00:12:70;00:12;nh ostrava;m. snopek;substitution;out;1;96;100
+2309844;1;00:12:70;00:12;nh ostrava;e. williams;substitution;in;1;96;100
+2309844;1;00:12:70;00:12;bk opava;j. sirina;foulon;;1;96;100
+2309844;1;00:12:70;00:12;nh ostrava;s. svoboda;foul;personal;1;96;100
+2309844;1;00:12:70;00:12;bk opava;;rebound;defensive;1;96;100
+2309844;1;00:12:70;00:12;nh ostrava;m. cank;freethrow;2of2;0;96;100
+2309844;1;00:12:70;00:12;nh ostrava;m. cank;freethrow;1of2;1;96;100
+2309844;1;00:12:70;00:12;bk opava;j. slavik;freethrow;2of2;1;95;100
+2309844;1;00:12:70;00:12;bk opava;j. slavik;freethrow;1of2;1;95;99
+2309844;1;00:12:70;00:12;nh ostrava;m. snopek;substitution;in;1;95;98
+2309844;1;00:12:70;00:12;nh ostrava;d. heinzl;substitution;in;1;95;98
+2309844;1;00:12:70;00:12;nh ostrava;c. jeter;substitution;out;1;95;98
+2309844;1;00:12:70;00:12;nh ostrava;e. williams;substitution;out;1;95;98
+2309844;1;00:12:70;00:12;bk opava;r. kouril;substitution;out;1;95;98
+2309844;1;00:12:70;00:12;bk opava;j. slavik;substitution;in;1;95;98
+2309844;1;00:12:70;00:12;nh ostrava;e. weaver;substitution;out;1;95;98
+2309844;1;00:12:70;00:12;nh ostrava;m. cank;substitution;in;1;95;98
+2309844;1;00:12:70;00:12;bk opava;r. kouril;foulon;;1;95;98
+2309844;1;00:12:70;00:12;nh ostrava;e. weaver;foul;unsportsmanlike;1;95;98
+2309844;1;00:12:70;00:12;bk opava;;headcoachchallenge;foul;1;95;98
+2309844;1;00:12:70;00:12;nh ostrava;e. weaver;foulon;;1;95;98
+2309844;1;00:12:70;00:12;bk opava;r. kouril;foul;personal;1;95;98
+2309844;1;00:26:00;00:26;bk opava;l. jurecka;freethrow;2of2;1;95;98
+2309844;1;00:26:00;00:26;bk opava;l. jurecka;freethrow;1of2;1;95;97
+2309844;1;00:26:00;00:26;bk opava;l. jurecka;foulon;;1;95;96
+2309844;1;00:26:00;00:26;nh ostrava;e. weaver;foul;personal;1;95;96
+2309844;1;00:26:00;00:26;bk opava;l. jurecka;steal;;1;95;96
+2309844;1;00:26:00;00:26;nh ostrava;c. jeter;turnover;ballhandling;1;95;96
+2309844;1;00:36:20;00:36;bk opava;j. sirina;3pt;jumpshot;1;95;96
+2309844;1;00:54:10;00:54;nh ostrava;e. williams;assist;;1;95;93
+2309844;1;00:54:10;00:54;nh ostrava;c. jeter;2pt;dunk;1;95;93
+2309844;1;01:01:00;01:01;nh ostrava;;timeout;full;1;93;93
+2309844;1;01:04:00;01:04;bk opava;r. kouril;assist;;1;93;93
+2309844;1;01:04:00;01:04;bk opava;j. sirina;2pt;layup;1;93;93
+2309844;1;01:05:00;01:05;bk opava;r. kouril;rebound;defensive;1;93;91
+2309844;1;01:08:00;01:08;bk opava;l. jurecka;block;;1;93;91
+2309844;1;01:08:00;01:08;nh ostrava;k. tyml;2pt;layup;0;93;91
+2309844;1;01:29:00;01:29;nh ostrava;e. williams;rebound;defensive;1;93;91
+2309844;1;01:29:00;01:29;bk opava;s. pursl;freethrow;2of2;0;93;91
+2309844;1;01:29:00;01:29;bk opava;s. pursl;freethrow;1of2;1;93;91
+2309844;1;01:29:00;01:29;bk opava;s. pursl;foulon;;1;93;90
+2309844;1;01:29:00;01:29;nh ostrava;e. weaver;foul;personal;1;93;90
+2309844;1;01:44:00;01:44;nh ostrava;e. weaver;freethrow;2of2;1;93;90
+2309844;1;01:44:00;01:44;nh ostrava;e. weaver;freethrow;1of2;1;92;90
+2309844;1;01:44:00;01:44;bk opava;l. jurecka;substitution;in;1;91;90
+2309844;1;01:44:00;01:44;bk opava;s. pursl;substitution;in;1;91;90
+2309844;1;01:44:00;01:44;bk opava;j. mokran;substitution;out;1;91;90
+2309844;1;01:44:00;01:44;bk opava;j. slavik;substitution;out;1;91;90
+2309844;1;01:44:00;01:44;nh ostrava;e. weaver;foulon;;1;91;90
+2309844;1;01:44:00;01:44;bk opava;j. mokran;foul;personal;1;91;90
+2309844;1;01:58:00;01:58;bk opava;j. mokran;2pt;jumpshot;1;91;90
+2309844;1;01:58:00;01:58;bk opava;j. mokran;rebound;offensive;1;91;88
+2309844;1;02:03:00;02:03;nh ostrava;c. jeter;block;;1;91;88
+2309844;1;02:03:00;02:03;bk opava;j. sirina;2pt;layup;0;91;88
+2309844;1;02:10:00;02:10;nh ostrava;k. tyml;assist;;1;91;88
+2309844;1;02:10:00;02:10;nh ostrava;e. williams;3pt;jumpshot;1;91;88
+2309844;1;02:26:00;02:26;nh ostrava;k. tyml;rebound;defensive;1;88;88
+2309844;1;02:29:00;02:29;bk opava;j. slavik;3pt;jumpshot;0;88;88
+2309844;1;02:46:00;02:46;nh ostrava;s. svoboda;assist;;1;88;88
+2309844;1;02:46:00;02:46;nh ostrava;c. jeter;2pt;jumpshot;1;88;88
+2309844;1;03:03:00;03:03;bk opava;s. pursl;substitution;out;1;86;88
+2309844;1;03:03:00;03:03;bk opava;j. svandrlik;substitution;in;1;86;88
+2309844;1;03:03:00;03:03;nh ostrava;s. svoboda;rebound;defensive;1;86;88
+2309844;1;03:08:00;03:08;bk opava;j. mokran;3pt;jumpshot;0;86;88
+2309844;1;03:18:00;03:18;nh ostrava;c. jeter;2pt;layup;1;86;88
+2309844;1;03:18:00;03:18;nh ostrava;c. jeter;rebound;offensive;1;84;88
+2309844;1;03:24:00;03:24;nh ostrava;e. weaver;2pt;layup;0;84;88
+2309844;1;03:36:00;03:36;bk opava;j. sirina;freethrow;2of2;1;84;88
+2309844;1;03:36:00;03:36;bk opava;j. sirina;freethrow;1of2;1;84;87
+2309844;1;03:36:00;03:36;bk opava;j. sirina;foulon;;1;84;86
+2309844;1;03:36:00;03:36;nh ostrava;k. tyml;foul;personal;1;84;86
+2309844;1;03:43:00;03:43;bk opava;j. mokran;rebound;offensive;1;84;86
+2309844;1;03:48:00;03:48;bk opava;r. kouril;3pt;jumpshot;0;84;86
+2309844;1;04:03:00;04:03;nh ostrava;k. tyml;freethrow;2of2;1;84;86
+2309844;1;04:03:00;04:03;nh ostrava;k. tyml;freethrow;1of2;0;83;86
+2309844;1;04:03:00;04:03;nh ostrava;k. tyml;foulon;;1;83;86
+2309844;1;04:03:00;04:03;bk opava;j. sirina;foul;personal;1;83;86
+2309844;1;04:13:00;04:13;bk opava;j. sirina;freethrow;3of3;1;83;86
+2309844;1;04:13:00;04:13;bk opava;j. sirina;freethrow;2of3;1;83;85
+2309844;1;04:13:00;04:13;bk opava;j. sirina;freethrow;1of3;1;83;84
+2309844;1;04:13:00;04:13;bk opava;j. sirina;foulon;;1;83;83
+2309844;1;04:13:00;04:13;nh ostrava;e. williams;foul;personal;1;83;83
+2309844;1;04:38:00;04:38;nh ostrava;e. weaver;2pt;layup;1;83;83
+2309844;1;04:52:00;04:52;bk opava;j. sirina;assist;;1;81;83
+2309844;1;04:52:00;04:52;bk opava;j. mokran;2pt;layup;1;81;83
+2309844;1;05:00:00;05:00;;;period;start;1;81;81
+2309844;1;05:00:00;05:00;bk opava;j. svandrlik;substitution;out;1;81;81
+2309844;1;05:00:00;05:00;bk opava;r. kouril;substitution;in;1;81;81
+2309844;4;00:00:00;00:00;;;period;end;1;81;81
+2309844;4;00:04:40;00:04;nh ostrava;e. williams;rebound;defensive;1;81;81
+2309844;4;00:05:90;00:05;bk opava;j. sirina;2pt;jumpshot;0;81;81
+2309844;4;00:28:30;00:28;nh ostrava;e. williams;assist;;1;81;81
+2309844;4;00:28:30;00:28;nh ostrava;k. tyml;3pt;jumpshot;1;81;81
+2309844;4;00:40:20;00:40;bk opava;s. pursl;freethrow;2of2;1;78;81
+2309844;4;00:40:20;00:40;bk opava;s. pursl;freethrow;1of2;1;78;80
+2309844;4;00:40:20;00:40;bk opava;l. jurecka;substitution;out;1;78;79
+2309844;4;00:40:20;00:40;bk opava;j. slavik;substitution;in;1;78;79
+2309844;4;00:40:20;00:40;nh ostrava;m. majercak;substitution;out;1;78;79
+2309844;4;00:40:20;00:40;nh ostrava;s. svoboda;substitution;in;1;78;79
+2309844;4;00:40:20;00:40;bk opava;s. pursl;foulon;;1;78;79
+2309844;4;00:40:20;00:40;nh ostrava;m. majercak;foul;personal;1;78;79
+2309844;4;00:40:20;00:40;bk opava;s. pursl;rebound;offensive;1;78;79
+2309844;4;00:40:50;00:40;bk opava;l. jurecka;3pt;jumpshot;0;78;79
+2309844;4;00:56:10;00:56;bk opava;j. slavik;substitution;out;1;78;79
+2309844;4;00:56:10;00:56;bk opava;l. jurecka;substitution;in;1;78;79
+2309844;4;00:56:10;00:56;bk opava;;timeout;full;1;78;79
+2309844;4;00:58:40;00:58;nh ostrava;m. majercak;assist;;1;78;79
+2309844;4;00:58:40;00:58;nh ostrava;e. williams;2pt;layup;1;78;79
+2309844;4;01:19:00;01:19;bk opava;l. jurecka;substitution;out;1;76;79
+2309844;4;01:19:00;01:19;bk opava;j. mokran;substitution;in;1;76;79
+2309844;4;01:19:00;01:19;bk opava;;headcoachchallenge;outofbounds;1;76;79
+2309844;4;01:19:00;01:19;bk opava;j. slavik;turnover;badpass;1;76;79
+2309844;4;01:33:00;01:33;nh ostrava;e. weaver;freethrow;1of1;1;76;79
+2309844;4;01:33:00;01:33;nh ostrava;e. weaver;foulon;;1;75;79
+2309844;4;01:33:00;01:33;bk opava;l. jurecka;foul;personal;1;75;79
+2309844;4;01:33:00;01:33;nh ostrava;e. weaver;2pt;layup;1;75;79
+2309844;4;01:35:00;01:35;nh ostrava;m. majercak;rebound;defensive;1;73;79
+2309844;4;01:38:00;01:38;bk opava;l. jurecka;3pt;jumpshot;0;73;79
+2309844;4;01:44:00;01:44;bk opava;j. svandrlik;rebound;defensive;1;73;79
+2309844;4;01:46:00;01:46;nh ostrava;e. weaver;2pt;layup;0;73;79
+2309844;4;02:01:00;02:01;nh ostrava;;timeout;full;1;73;79
+2309844;4;02:04:00;02:04;bk opava;j. sirina;assist;;1;73;79
+2309844;4;02:04:00;02:04;bk opava;l. jurecka;3pt;jumpshot;1;73;79
+2309844;4;02:16:00;02:16;bk opava;j. slavik;rebound;offensive;1;73;76
+2309844;4;02:19:00;02:19;bk opava;j. svandrlik;3pt;jumpshot;0;73;76
+2309844;4;02:30:00;02:30;bk opava;s. pursl;rebound;defensive;1;73;76
+2309844;4;02:32:00;02:32;nh ostrava;e. williams;2pt;jumpshot;0;73;76
+2309844;4;02:42:00;02:42;nh ostrava;s. svoboda;substitution;out;1;73;76
+2309844;4;02:42:00;02:42;nh ostrava;m. majercak;substitution;in;1;73;76
+2309844;4;02:42:00;02:42;nh ostrava;k. tyml;foulon;;1;73;76
+2309844;4;02:42:00;02:42;bk opava;j. sirina;foul;personal;1;73;76
+2309844;4;02:51:00;02:51;bk opava;s. pursl;2pt;layup;1;73;76
+2309844;4;03:04:00;03:04;bk opava;s. pursl;freethrow;2of2;1;73;74
+2309844;4;03:04:00;03:04;bk opava;s. pursl;freethrow;1of2;1;73;73
+2309844;4;03:04:00;03:04;bk opava;s. pursl;foulon;;1;73;72
+2309844;4;03:04:00;03:04;nh ostrava;c. jeter;foul;unsportsmanlike;1;73;72
+2309844;4;03:04:00;03:04;nh ostrava;c. jeter;rebound;offensive;1;73;72
+2309844;4;03:06:00;03:06;nh ostrava;s. svoboda;3pt;jumpshot;0;73;72
+2309844;4;03:29:00;03:29;nh ostrava;e. williams;rebound;defensive;1;73;72
+2309844;4;03:31:00;03:31;bk opava;j. sirina;3pt;jumpshot;0;73;72
+2309844;4;03:50:00;03:50;nh ostrava;c. jeter;freethrow;2of2;1;73;72
+2309844;4;03:50:00;03:50;nh ostrava;s. svoboda;assist;;1;72;72
+2309844;4;03:50:00;03:50;nh ostrava;c. jeter;freethrow;1of2;1;72;72
+2309844;4;03:50:00;03:50;nh ostrava;c. jeter;foulon;;1;71;72
+2309844;4;03:50:00;03:50;bk opava;j. svandrlik;foul;personal;1;71;72
+2309844;4;04:07:00;04:07;bk opava;j. sirina;freethrow;2of2;1;71;72
+2309844;4;04:07:00;04:07;bk opava;j. sirina;freethrow;1of2;1;71;71
+2309844;4;04:07:00;04:07;bk opava;j. mokran;substitution;out;1;71;70
+2309844;4;04:07:00;04:07;bk opava;s. pursl;substitution;in;1;71;70
+2309844;4;04:07:00;04:07;bk opava;j. sirina;foulon;;1;71;70
+2309844;4;04:07:00;04:07;nh ostrava;e. weaver;foul;personal;1;71;70
+2309844;4;04:14:00;04:14;nh ostrava;k. tyml;2pt;jumpshot;1;71;70
+2309844;4;04:14:00;04:14;nh ostrava;k. tyml;rebound;offensive;1;69;70
+2309844;4;04:16:00;04:16;nh ostrava;k. tyml;2pt;layup;0;69;70
+2309844;4;04:24:00;04:24;nh ostrava;s. svoboda;rebound;defensive;1;69;70
+2309844;4;04:27:00;04:27;bk opava;j. mokran;2pt;jumpshot;0;69;70
+2309844;4;04:41:00;04:41;bk opava;l. jurecka;rebound;defensive;1;69;70
+2309844;4;04:43:00;04:43;nh ostrava;k. tyml;2pt;jumpshot;0;69;70
+2309844;4;04:57:00;04:57;bk opava;j. svandrlik;2pt;jumpshot;1;69;70
+2309844;4;04:58:00;04:58;bk opava;j. svandrlik;rebound;offensive;1;69;68
+2309844;4;05:03:00;05:03;bk opava;j. slavik;3pt;jumpshot;0;69;68
+2309844;4;05:11:00;05:11;bk opava;j. sirina;rebound;defensive;1;69;68
+2309844;4;05:13:00;05:13;nh ostrava;e. weaver;2pt;layup;0;69;68
+2309844;4;05:20:00;05:20;nh ostrava;e. williams;foulon;;1;69;68
+2309844;4;05:20:00;05:20;bk opava;j. mokran;foul;personal;1;69;68
+2309844;4;05:24:00;05:24;nh ostrava;j. micka;substitution;out;1;69;68
+2309844;4;05:24:00;05:24;nh ostrava;c. jeter;substitution;in;1;69;68
+2309844;4;05:24:00;05:24;nh ostrava;;timeout;full;1;69;68
+2309844;4;05:26:00;05:26;bk opava;j. sirina;2pt;jumpshot;1;69;68
+2309844;4;05:49:00;05:49;bk opava;j. svandrlik;steal;;1;69;66
+2309844;4;05:49:00;05:49;nh ostrava;e. weaver;turnover;ballhandling;1;69;66
+2309844;4;06:05:00;06:05;bk opava;j. mokran;assist;;1;69;66
+2309844;4;06:05:00;06:05;bk opava;j. svandrlik;2pt;layup;1;69;66
+2309844;4;06:18:00;06:18;nh ostrava;m. majercak;substitution;out;1;69;64
+2309844;4;06:18:00;06:18;nh ostrava;s. svoboda;substitution;in;1;69;64
+2309844;4;06:18:00;06:18;bk opava;j. sirina;foulon;;1;69;64
+2309844;4;06:18:00;06:18;nh ostrava;m. majercak;foul;personal;1;69;64
+2309844;4;06:23:00;06:23;bk opava;l. jurecka;rebound;defensive;1;69;64
+2309844;4;06:25:00;06:25;nh ostrava;k. tyml;3pt;jumpshot;0;69;64
+2309844;4;06:30:00;06:30;nh ostrava;e. williams;rebound;offensive;1;69;64
+2309844;4;06:33:00;06:33;nh ostrava;e. weaver;2pt;layup;0;69;64
+2309844;4;06:47:00;06:47;bk opava;j. slavik;freethrow;2of2;1;69;64
+2309844;4;06:47:00;06:47;bk opava;j. slavik;freethrow;1of2;0;69;63
+2309844;4;06:47:00;06:47;bk opava;s. pursl;substitution;out;1;69;63
+2309844;4;06:47:00;06:47;bk opava;j. svandrlik;substitution;in;1;69;63
+2309844;4;06:47:00;06:47;nh ostrava;d. heinzl;substitution;out;1;69;63
+2309844;4;06:47:00;06:47;nh ostrava;e. williams;substitution;in;1;69;63
+2309844;4;06:47:00;06:47;bk opava;j. slavik;foulon;;1;69;63
+2309844;4;06:47:00;06:47;nh ostrava;e. weaver;foul;personal;1;69;63
+2309844;4;07:04:00;07:04;nh ostrava;d. heinzl;turnover;ballhandling;1;69;63
+2309844;4;07:25:00;07:25;bk opava;j. sirina;assist;;1;69;63
+2309844;4;07:25:00;07:25;bk opava;j. slavik;3pt;jumpshot;1;69;63
+2309844;4;07:45:00;07:45;nh ostrava;d. heinzl;2pt;jumpshot;1;69;60
+2309844;4;07:45:00;07:45;nh ostrava;d. heinzl;rebound;offensive;1;67;60
+2309844;4;07:48:00;07:48;nh ostrava;j. micka;3pt;jumpshot;0;67;60
+2309844;4;08:00:00;08:00;bk opava;r. kouril;substitution;out;1;67;60
+2309844;4;08:00:00;08:00;bk opava;l. jurecka;substitution;in;1;67;60
+2309844;4;08:00:00;08:00;nh ostrava;k. tyml;foulon;;1;67;60
+2309844;4;08:00:00;08:00;bk opava;s. pursl;turnover;offensive;1;67;60
+2309844;4;08:00:00;08:00;bk opava;s. pursl;foul;offensive;1;67;60
+2309844;4;08:06:00;08:06;bk opava;j. mokran;rebound;defensive;1;67;60
+2309844;4;08:10:00;08:10;nh ostrava;m. majercak;3pt;jumpshot;0;67;60
+2309844;4;08:25:00;08:25;nh ostrava;d. heinzl;rebound;defensive;1;67;60
+2309844;4;08:25:00;08:25;bk opava;j. sirina;freethrow;2of2;0;67;60
+2309844;4;08:25:00;08:25;bk opava;j. sirina;freethrow;1of2;0;67;60
+2309844;4;08:25:00;08:25;bk opava;j. sirina;foulon;;1;67;60
+2309844;4;08:25:00;08:25;nh ostrava;d. heinzl;foul;personal;1;67;60
+2309844;4;08:40:00;08:40;bk opava;s. pursl;foulon;;1;67;60
+2309844;4;08:40:00;08:40;nh ostrava;j. micka;foul;personal;1;67;60
+2309844;4;08:40:00;08:40;bk opava;s. pursl;rebound;defensive;1;67;60
+2309844;4;08:44:00;08:44;nh ostrava;m. majercak;3pt;jumpshot;0;67;60
+2309844;4;08:51:00;08:51;nh ostrava;m. majercak;steal;;1;67;60
+2309844;4;08:51:00;08:51;bk opava;r. kouril;turnover;ballhandling;1;67;60
+2309844;4;08:59:00;08:59;nh ostrava;e. weaver;2pt;layup;1;67;60
+2309844;4;09:18:00;09:18;bk opava;j. sirina;assist;;1;65;60
+2309844;4;09:18:00;09:18;bk opava;j. slavik;3pt;jumpshot;1;65;60
+2309844;4;09:21:00;09:21;bk opava;s. pursl;rebound;defensive;1;65;57
+2309844;4;09:26:00;09:26;nh ostrava;m. majercak;2pt;layup;0;65;57
+2309844;4;09:34:00;09:34;bk opava;s. pursl;turnover;travel;1;65;57
+2309844;4;09:41:00;09:41;bk opava;j. sirina;steal;;1;65;57
+2309844;4;09:41:00;09:41;nh ostrava;j. micka;turnover;ballhandling;1;65;57
+2309844;4;10:00:00;10:00;;;period;start;1;65;57
+2309844;4;10:00:00;10:00;bk opava;j. slavik;substitution;in;1;65;57
+2309844;4;10:00:00;10:00;bk opava;s. pursl;substitution;in;1;65;57
+2309844;4;10:00:00;10:00;bk opava;m. gniadek;substitution;out;1;65;57
+2309844;4;10:00:00;10:00;bk opava;l. jurecka;substitution;out;1;65;57
+2309844;4;10:00:00;10:00;nh ostrava;m. snopek;substitution;out;1;65;57
+2309844;4;10:00:00;10:00;nh ostrava;m. majercak;substitution;in;1;65;57
+2309844;3;00:00:00;00:00;;;period;end;1;65;57
+2309844;3;00:00:00;00:00;nh ostrava;;rebound;defensive;1;65;57
+2309844;3;00:00:60;00:00;bk opava;r. kouril;3pt;jumpshot;0;65;57
+2309844;3;00:17:70;00:17;nh ostrava;j. micka;substitution;in;1;65;57
+2309844;3;00:17:70;00:17;nh ostrava;k. tyml;substitution;in;1;65;57
+2309844;3;00:17:70;00:17;nh ostrava;m. majercak;substitution;out;1;65;57
+2309844;3;00:17:70;00:17;nh ostrava;e. williams;substitution;out;1;65;57
+2309844;3;00:17:70;00:17;nh ostrava;m. majercak;freethrow;2of2;1;65;57
+2309844;3;00:17:70;00:17;nh ostrava;m. majercak;freethrow;1of2;1;64;57
+2309844;3;00:17:70;00:17;nh ostrava;m. majercak;foulon;;1;63;57
+2309844;3;00:17:70;00:17;bk opava;m. gniadek;foul;personal;1;63;57
+2309844;3;00:31:00;00:31;nh ostrava;m. majercak;rebound;defensive;1;63;57
+2309844;3;00:33:90;00:33;nh ostrava;e. williams;block;;1;63;57
+2309844;3;00:33:90;00:33;bk opava;l. jurecka;3pt;jumpshot;0;63;57
+2309844;3;00:44:50;00:44;nh ostrava;e. weaver;turnover;ballhandling;1;63;57
+2309844;3;00:56:10;00:56;nh ostrava;d. heinzl;rebound;offensive;1;63;57
+2309844;3;00:58:70;00:58;nh ostrava;d. heinzl;2pt;jumpshot;0;63;57
+2309844;3;00:59:40;00:59;nh ostrava;d. heinzl;rebound;offensive;1;63;57
+2309844;3;01:02:00;01:02;bk opava;m. gniadek;block;;1;63;57
+2309844;3;01:02:00;01:02;nh ostrava;m. majercak;2pt;jumpshot;0;63;57
+2309844;3;01:21:00;01:21;bk opava;j. sirina;freethrow;2of2;1;63;57
+2309844;3;01:21:00;01:21;bk opava;j. sirina;freethrow;1of2;1;63;56
+2309844;3;01:21:00;01:21;bk opava;f. zbranek;substitution;out;1;63;55
+2309844;3;01:21:00;01:21;bk opava;j. sirina;substitution;in;1;63;55
+2309844;3;01:21:00;01:21;bk opava;m. kvapil;substitution;out;1;63;55
+2309844;3;01:21:00;01:21;bk opava;j. mokran;substitution;in;1;63;55
+2309844;3;01:21:00;01:21;bk opava;f. zbranek;foulon;;1;63;55
+2309844;3;01:21:00;01:21;nh ostrava;e. williams;foul;personal;1;63;55
+2309844;3;01:21:00;01:21;nh ostrava;d. heinzl;rebound;offensive;1;63;55
+2309844;3;01:21:00;01:21;nh ostrava;e. weaver;3pt;jumpshot;0;63;55
+2309844;3;01:35:00;01:35;nh ostrava;e. weaver;rebound;defensive;1;63;55
+2309844;3;01:37:00;01:37;bk opava;r. kouril;2pt;jumpshot;0;63;55
+2309844;3;01:43:00;01:43;bk opava;l. jurecka;freethrow;1of1;1;63;55
+2309844;3;01:43:00;01:43;nh ostrava;;foul;coachtechnical;1;63;54
+2309844;3;01:52:00;01:52;bk opava;r. kouril;rebound;defensive;1;63;54
+2309844;3;01:56:00;01:56;nh ostrava;e. weaver;3pt;jumpshot;0;63;54
+2309844;3;02:16:00;02:16;bk opava;f. zbranek;assist;;1;63;54
+2309844;3;02:16:00;02:16;bk opava;r. kouril;2pt;jumpshot;1;63;54
+2309844;3;02:25:00;02:25;nh ostrava;s. svoboda;substitution;out;1;63;52
+2309844;3;02:25:00;02:25;nh ostrava;e. weaver;substitution;in;1;63;52
+2309844;3;02:25:00;02:25;nh ostrava;s. svoboda;turnover;travel;1;63;52
+2309844;3;02:37:00;02:37;bk opava;m. gniadek;assist;;1;63;52
+2309844;3;02:37:00;02:37;bk opava;r. kouril;3pt;jumpshot;1;63;52
+2309844;3;02:48:00;02:48;nh ostrava;m. snopek;freethrow;2of2;1;63;49
+2309844;3;02:48:00;02:48;nh ostrava;m. snopek;freethrow;1of2;1;62;49
+2309844;3;02:48:00;02:48;nh ostrava;m. snopek;foulon;;1;61;49
+2309844;3;02:48:00;02:48;bk opava;m. gniadek;foul;personal;1;61;49
+2309844;3;02:48:00;02:48;nh ostrava;m. snopek;rebound;offensive;1;61;49
+2309844;3;02:51:00;02:51;nh ostrava;m. snopek;2pt;alleyoop;0;61;49
+2309844;3;03:10:00;03:10;nh ostrava;e. williams;rebound;defensive;1;61;49
+2309844;3;03:12:00;03:12;bk opava;r. kouril;2pt;layup;0;61;49
+2309844;3;03:17:00;03:17;bk opava;r. kouril;rebound;defensive;1;61;49
+2309844;3;03:21:00;03:21;nh ostrava;e. williams;2pt;jumpshot;0;61;49
+2309844;3;03:36:00;03:36;bk opava;f. zbranek;freethrow;2of2;1;61;49
+2309844;3;03:36:00;03:36;bk opava;f. zbranek;freethrow;1of2;1;61;48
+2309844;3;03:36:00;03:36;nh ostrava;c. jeter;substitution;out;1;61;47
+2309844;3;03:36:00;03:36;nh ostrava;d. heinzl;substitution;in;1;61;47
+2309844;3;03:36:00;03:36;bk opava;f. zbranek;foulon;;1;61;47
+2309844;3;03:36:00;03:36;nh ostrava;s. svoboda;foul;personal;1;61;47
+2309844;3;03:36:00;03:36;bk opava;f. zbranek;rebound;offensive;1;61;47
+2309844;3;03:38:00;03:38;bk opava;l. jurecka;3pt;jumpshot;0;61;47
+2309844;3;03:49:00;03:49;bk opava;m. kvapil;rebound;offensive;1;61;47
+2309844;3;03:51:00;03:51;bk opava;m. kvapil;2pt;jumpshot;0;61;47
+2309844;3;04:03:00;04:03;nh ostrava;m. majercak;3pt;jumpshot;1;61;47
+2309844;3;04:19:00;04:19;bk opava;r. kouril;freethrow;2of2;1;58;47
+2309844;3;04:19:00;04:19;bk opava;r. kouril;freethrow;1of2;1;58;46
+2309844;3;04:19:00;04:19;bk opava;j. sirina;substitution;out;1;58;45
+2309844;3;04:19:00;04:19;bk opava;m. kvapil;substitution;in;1;58;45
+2309844;3;04:19:00;04:19;nh ostrava;k. tyml;substitution;out;1;58;45
+2309844;3;04:19:00;04:19;nh ostrava;m. snopek;substitution;in;1;58;45
+2309844;3;04:19:00;04:19;bk opava;r. kouril;foulon;;1;58;45
+2309844;3;04:19:00;04:19;nh ostrava;c. jeter;foul;personal;1;58;45
+2309844;3;04:20:00;04:20;bk opava;l. jurecka;rebound;offensive;1;58;45
+2309844;3;04:24:00;04:24;bk opava;r. kouril;3pt;jumpshot;0;58;45
+2309844;3;04:39:00;04:39;bk opava;m. gniadek;rebound;defensive;1;58;45
+2309844;3;04:39:00;04:39;nh ostrava;c. jeter;freethrow;2of2;0;58;45
+2309844;3;04:39:00;04:39;nh ostrava;c. jeter;freethrow;1of2;1;58;45
+2309844;3;04:39:00;04:39;nh ostrava;c. jeter;foulon;;1;57;45
+2309844;3;04:39:00;04:39;bk opava;m. gniadek;foul;personal;1;57;45
+2309844;3;04:39:00;04:39;nh ostrava;e. williams;rebound;defensive;1;57;45
+2309844;3;04:41:00;04:41;bk opava;l. jurecka;3pt;jumpshot;0;57;45
+2309844;3;04:56:00;04:56;bk opava;l. jurecka;steal;;1;57;45
+2309844;3;04:56:00;04:56;nh ostrava;c. jeter;turnover;ballhandling;1;57;45
+2309844;3;05:09:00;05:09;bk opava;j. sirina;freethrow;2of2;1;57;45
+2309844;3;05:09:00;05:09;bk opava;j. sirina;freethrow;1of2;1;57;44
+2309844;3;05:09:00;05:09;nh ostrava;e. weaver;substitution;out;1;57;43
+2309844;3;05:09:00;05:09;nh ostrava;m. majercak;substitution;in;1;57;43
+2309844;3;05:09:00;05:09;bk opava;j. sirina;foulon;;1;57;43
+2309844;3;05:09:00;05:09;nh ostrava;k. tyml;foul;personal;1;57;43
+2309844;3;05:22:00;05:22;bk opava;m. gniadek;foulon;;1;57;43
+2309844;3;05:22:00;05:22;nh ostrava;c. jeter;turnover;offensive;1;57;43
+2309844;3;05:22:00;05:22;nh ostrava;c. jeter;foul;offensive;1;57;43
+2309844;3;05:33:00;05:33;nh ostrava;e. weaver;rebound;defensive;1;57;43
+2309844;3;05:37:00;05:37;bk opava;l. jurecka;3pt;jumpshot;0;57;43
+2309844;3;05:40:00;05:40;bk opava;r. kouril;substitution;in;1;57;43
+2309844;3;05:40:00;05:40;bk opava;m. gniadek;substitution;in;1;57;43
+2309844;3;05:40:00;05:40;bk opava;s. pursl;substitution;out;1;57;43
+2309844;3;05:40:00;05:40;bk opava;j. slavik;substitution;out;1;57;43
+2309844;3;05:40:00;05:40;bk opava;;timeout;full;1;57;43
+2309844;3;05:42:00;05:42;nh ostrava;c. jeter;2pt;jumpshot;1;57;43
+2309844;3;05:43:00;05:43;nh ostrava;c. jeter;rebound;offensive;1;55;43
+2309844;3;05:44:00;05:44;nh ostrava;k. tyml;2pt;layup;0;55;43
+2309844;3;05:48:00;05:48;nh ostrava;e. weaver;rebound;defensive;1;55;43
+2309844;3;05:50:00;05:50;bk opava;s. pursl;2pt;jumpshot;0;55;43
+2309844;3;06:09:00;06:09;nh ostrava;e. weaver;assist;;1;55;43
+2309844;3;06:09:00;06:09;nh ostrava;s. svoboda;3pt;jumpshot;1;55;43
+2309844;3;06:12:00;06:12;nh ostrava;c. jeter;foulon;;1;52;43
+2309844;3;06:12:00;06:12;bk opava;j. slavik;foul;personal;1;52;43
+2309844;3;06:29:00;06:29;bk opava;j. slavik;freethrow;2of2;1;52;43
+2309844;3;06:29:00;06:29;bk opava;j. slavik;freethrow;1of2;1;52;42
+2309844;3;06:29:00;06:29;bk opava;l. jurecka;substitution;in;1;52;41
+2309844;3;06:29:00;06:29;bk opava;f. zbranek;substitution;in;1;52;41
+2309844;3;06:29:00;06:29;bk opava;j. svandrlik;substitution;out;1;52;41
+2309844;3;06:29:00;06:29;bk opava;j. mokran;substitution;out;1;52;41
+2309844;3;06:29:00;06:29;bk opava;j. slavik;foulon;;1;52;41
+2309844;3;06:29:00;06:29;nh ostrava;c. jeter;foul;personal;1;52;41
+2309844;3;06:49:00;06:49;nh ostrava;e. weaver;assist;;1;52;41
+2309844;3;06:49:00;06:49;nh ostrava;s. svoboda;3pt;jumpshot;1;52;41
+2309844;3;07:00:00;07:00;nh ostrava;k. tyml;foulon;;1;49;41
+2309844;3;07:00:00;07:00;bk opava;j. mokran;turnover;offensive;1;49;41
+2309844;3;07:00:00;07:00;bk opava;j. mokran;foul;offensive;1;49;41
+2309844;3;07:05:00;07:05;bk opava;j. svandrlik;rebound;defensive;1;49;41
+2309844;3;07:08:00;07:08;nh ostrava;e. williams;2pt;jumpshot;0;49;41
+2309844;3;07:20:00;07:20;nh ostrava;s. svoboda;rebound;offensive;1;49;41
+2309844;3;07:24:00;07:24;nh ostrava;e. williams;3pt;jumpshot;0;49;41
+2309844;3;07:26:00;07:26;nh ostrava;c. jeter;rebound;offensive;1;49;41
+2309844;3;07:29:00;07:29;bk opava;j. slavik;block;;1;49;41
+2309844;3;07:29:00;07:29;nh ostrava;e. weaver;2pt;layup;0;49;41
+2309844;3;07:45:00;07:45;bk opava;j. mokran;assist;;1;49;41
+2309844;3;07:45:00;07:45;bk opava;j. sirina;3pt;jumpshot;1;49;41
+2309844;3;08:06:00;08:06;nh ostrava;e. williams;assist;;1;49;38
+2309844;3;08:06:00;08:06;nh ostrava;s. svoboda;3pt;jumpshot;1;49;38
+2309844;3;08:09:00;08:09;nh ostrava;e. weaver;foulon;;1;46;38
+2309844;3;08:09:00;08:09;bk opava;j. slavik;foul;personal;1;46;38
+2309844;3;08:22:00;08:22;bk opava;j. mokran;freethrow;2of2;1;46;38
+2309844;3;08:22:00;08:22;bk opava;j. mokran;freethrow;1of2;1;46;37
+2309844;3;08:22:00;08:22;bk opava;j. mokran;foulon;;1;46;36
+2309844;3;08:22:00;08:22;nh ostrava;e. williams;foul;personal;1;46;36
+2309844;3;08:37:00;08:37;nh ostrava;c. jeter;freethrow;1of1;1;46;36
+2309844;3;08:37:00;08:37;nh ostrava;c. jeter;foulon;;1;45;36
+2309844;3;08:37:00;08:37;bk opava;j. svandrlik;foul;personal;1;45;36
+2309844;3;08:37:00;08:37;nh ostrava;e. weaver;assist;;1;45;36
+2309844;3;08:37:00;08:37;nh ostrava;c. jeter;2pt;layup;1;45;36
+2309844;3;08:50:00;08:50;bk opava;j. sirina;2pt;floatingjumpshot;1;43;36
+2309844;3;08:59:00;08:59;bk opava;s. pursl;rebound;defensive;1;43;34
+2309844;3;09:01:00;09:01;nh ostrava;c. jeter;2pt;layup;0;43;34
+2309844;3;09:19:00;09:19;nh ostrava;;rebound;defensive;1;43;34
+2309844;3;09:19:00;09:19;bk opava;j. sirina;freethrow;2of2;0;43;34
+2309844;3;09:19:00;09:19;bk opava;j. sirina;freethrow;1of2;1;43;34
+2309844;3;09:19:00;09:19;bk opava;j. sirina;foulon;;1;43;33
+2309844;3;09:19:00;09:19;nh ostrava;e. williams;foul;personal;1;43;33
+2309844;3;09:24:00;09:24;bk opava;j. sirina;steal;;1;43;33
+2309844;3;09:24:00;09:24;nh ostrava;c. jeter;turnover;ballhandling;1;43;33
+2309844;3;09:40:00;09:40;nh ostrava;c. jeter;rebound;defensive;1;43;33
+2309844;3;09:43:00;09:43;bk opava;s. pursl;2pt;turnaroundjumpshot;0;43;33
+2309844;3;10:00:00;10:00;;;period;start;1;43;33
+2309844;3;10:00:00;10:00;bk opava;j. slavik;substitution;in;1;43;33
+2309844;3;10:00:00;10:00;bk opava;j. sirina;substitution;in;1;43;33
+2309844;3;10:00:00;10:00;bk opava;s. pursl;substitution;in;1;43;33
+2309844;3;10:00:00;10:00;bk opava;j. mokran;substitution;in;1;43;33
+2309844;3;10:00:00;10:00;bk opava;r. kouril;substitution;out;1;43;33
+2309844;3;10:00:00;10:00;bk opava;l. jurecka;substitution;out;1;43;33
+2309844;3;10:00:00;10:00;bk opava;m. kvapil;substitution;out;1;43;33
+2309844;3;10:00:00;10:00;bk opava;m. gniadek;substitution;out;1;43;33
+2309844;3;10:00:00;10:00;nh ostrava;m. janu;substitution;out;1;43;33
+2309844;3;10:00:00;10:00;nh ostrava;s. svoboda;substitution;in;1;43;33
+2309844;2;00:00:00;00:00;;;period;end;1;43;33
+2309844;2;00:04:80;00:04;nh ostrava;c. jeter;2pt;layup;1;43;33
+2309844;2;00:04:80;00:04;nh ostrava;c. jeter;rebound;offensive;1;41;33
+2309844;2;00:06:10;00:06;nh ostrava;e. weaver;2pt;layup;0;41;33
+2309844;2;00:33:30;00:33;bk opava;r. kouril;2pt;jumpshot;1;41;33
+2309844;2;00:45:40;00:45;bk opava;l. jurecka;rebound;defensive;1;41;31
+2309844;2;00:47:10;00:47;nh ostrava;m. janu;2pt;layup;0;41;31
+2309844;2;00:50:30;00:50;nh ostrava;m. janu;steal;;1;41;31
+2309844;2;00:50:30;00:50;bk opava;m. gniadek;turnover;badpass;1;41;31
+2309844;2;00:59:70;00:59;bk opava;m. gniadek;rebound;defensive;1;41;31
+2309844;2;01:02:00;01:02;nh ostrava;e. williams;3pt;jumpshot;0;41;31
+2309844;2;01:15:00;01:15;nh ostrava;s. svoboda;substitution;out;1;41;31
+2309844;2;01:15:00;01:15;nh ostrava;m. janu;substitution;in;1;41;31
+2309844;2;01:15:00;01:15;nh ostrava;;rebound;defensive;1;41;31
+2309844;2;01:21:00;01:21;bk opava;m. kvapil;3pt;jumpshot;0;41;31
+2309844;2;01:37:00;01:37;nh ostrava;c. jeter;assist;;1;41;31
+2309844;2;01:37:00;01:37;nh ostrava;e. williams;2pt;jumpshot;1;41;31
+2309844;2;01:56:00;01:56;nh ostrava;e. weaver;rebound;defensive;1;39;31
+2309844;2;01:58:00;01:58;bk opava;j. svandrlik;2pt;layup;0;39;31
+2309844;2;02:01:00;02:01;bk opava;m. kvapil;rebound;offensive;1;39;31
+2309844;2;02:03:00;02:03;bk opava;r. kouril;3pt;jumpshot;0;39;31
+2309844;2;02:11:00;02:11;bk opava;j. sirina;substitution;out;1;39;31
+2309844;2;02:11:00;02:11;bk opava;r. kouril;substitution;in;1;39;31
+2309844;2;02:21:00;02:21;bk opava;r. kouril;substitution;out;1;39;31
+2309844;2;02:21:00;02:21;bk opava;l. jurecka;substitution;in;1;39;31
+2309844;2;02:21:00;02:21;bk opava;;timeout;full;1;39;31
+2309844;2;02:25:00;02:25;nh ostrava;k. tyml;assist;;1;39;31
+2309844;2;02:25:00;02:25;nh ostrava;e. weaver;3pt;jumpshot;1;39;31
+2309844;2;02:30:00;02:30;nh ostrava;c. jeter;rebound;defensive;1;36;31
+2309844;2;02:34:00;02:34;bk opava;j. sirina;2pt;layup;0;36;31
+2309844;2;02:46:00;02:46;nh ostrava;e. williams;assist;;1;36;31
+2309844;2;02:46:00;02:46;nh ostrava;c. jeter;2pt;dunk;1;36;31
+2309844;2;03:00:00;03:00;nh ostrava;k. tyml;rebound;defensive;1;34;31
+2309844;2;03:03:00;03:03;bk opava;m. kvapil;3pt;jumpshot;0;34;31
+2309844;2;03:23:00;03:23;bk opava;m. gniadek;rebound;defensive;1;34;31
+2309844;2;03:25:00;03:25;nh ostrava;c. jeter;3pt;jumpshot;0;34;31
+2309844;2;03:40:00;03:40;nh ostrava;e. weaver;rebound;defensive;1;34;31
+2309844;2;03:45:00;03:45;bk opava;m. gniadek;3pt;jumpshot;0;34;31
+2309844;2;03:55:00;03:55;bk opava;r. kouril;rebound;defensive;1;34;31
+2309844;2;03:58:00;03:58;nh ostrava;s. svoboda;3pt;jumpshot;0;34;31
+2309844;2;04:15:00;04:15;bk opava;m. gniadek;substitution;in;1;34;31
+2309844;2;04:15:00;04:15;bk opava;m. kvapil;substitution;in;1;34;31
+2309844;2;04:15:00;04:15;bk opava;j. mokran;substitution;out;1;34;31
+2309844;2;04:15:00;04:15;bk opava;s. pursl;substitution;out;1;34;31
+2309844;2;04:15:00;04:15;nh ostrava;j. micka;substitution;out;1;34;31
+2309844;2;04:15:00;04:15;nh ostrava;c. jeter;substitution;in;1;34;31
+2309844;2;04:15:00;04:15;nh ostrava;;timeout;full;1;34;31
+2309844;2;04:19:00;04:19;bk opava;r. kouril;assist;;1;34;31
+2309844;2;04:19:00;04:19;bk opava;j. svandrlik;3pt;jumpshot;1;34;31
+2309844;2;04:23:00;04:23;bk opava;s. pursl;rebound;defensive;1;34;28
+2309844;2;04:25:00;04:25;nh ostrava;j. micka;2pt;jumpshot;0;34;28
+2309844;2;04:28:00;04:28;nh ostrava;k. tyml;freethrow;2of2;1;34;28
+2309844;2;04:28:00;04:28;nh ostrava;k. tyml;freethrow;1of2;0;33;28
+2309844;2;04:28:00;04:28;bk opava;r. farsky;substitution;out;1;33;28
+2309844;2;04:28:00;04:28;bk opava;r. kouril;substitution;in;1;33;28
+2309844;2;04:28:00;04:28;nh ostrava;k. tyml;foulon;;1;33;28
+2309844;2;04:28:00;04:28;bk opava;r. farsky;foul;unsportsmanlike;1;33;28
+2309844;2;04:30:00;04:30;nh ostrava;k. tyml;steal;;1;33;28
+2309844;2;04:30:00;04:30;bk opava;r. farsky;turnover;ballhandling;1;33;28
+2309844;2;04:37:00;04:37;bk opava;j. svandrlik;rebound;offensive;1;33;28
+2309844;2;04:41:00;04:41;bk opava;j. svandrlik;3pt;jumpshot;0;33;28
+2309844;2;04:51:00;04:51;nh ostrava;e. williams;freethrow;2of2;1;33;28
+2309844;2;04:51:00;04:51;nh ostrava;e. williams;freethrow;1of2;1;32;28
+2309844;2;04:51:00;04:51;nh ostrava;e. williams;foulon;;1;31;28
+2309844;2;04:51:00;04:51;bk opava;j. svandrlik;foul;personal;1;31;28
+2309844;2;05:06:00;05:06;bk opava;j. mokran;2pt;jumpshot;1;31;28
+2309844;2;05:21:00;05:21;nh ostrava;e. weaver;freethrow;2of2;1;31;26
+2309844;2;05:21:00;05:21;nh ostrava;e. weaver;freethrow;1of2;1;30;26
+2309844;2;05:21:00;05:21;nh ostrava;e. weaver;foulon;;1;29;26
+2309844;2;05:21:00;05:21;bk opava;j. mokran;foul;personal;1;29;26
+2309844;2;05:28:00;05:28;nh ostrava;e. weaver;rebound;defensive;1;29;26
+2309844;2;05:31:00;05:31;bk opava;j. sirina;2pt;layup;0;29;26
+2309844;2;05:57:00;05:57;nh ostrava;s. svoboda;2pt;jumpshot;1;29;26
+2309844;2;05:58:00;05:58;nh ostrava;s. svoboda;rebound;offensive;1;27;26
+2309844;2;06:02:00;06:02;nh ostrava;e. williams;3pt;jumpshot;0;27;26
+2309844;2;06:15:00;06:15;nh ostrava;j. micka;rebound;offensive;1;27;26
+2309844;2;06:19:00;06:19;nh ostrava;s. svoboda;3pt;jumpshot;0;27;26
+2309844;2;06:25:00;06:25;nh ostrava;e. williams;rebound;defensive;1;27;26
+2309844;2;06:30:00;06:30;bk opava;r. farsky;3pt;jumpshot;0;27;26
+2309844;2;06:44:00;06:44;bk opava;j. slavik;substitution;out;1;27;26
+2309844;2;06:44:00;06:44;bk opava;j. svandrlik;substitution;in;1;27;26
+2309844;2;06:44:00;06:44;bk opava;;timeout;full;1;27;26
+2309844;2;06:47:00;06:47;nh ostrava;e. williams;3pt;jumpshot;1;27;26
+2309844;2;07:00:00;07:00;nh ostrava;k. tyml;rebound;defensive;1;24;26
+2309844;2;07:03:00;07:03;bk opava;j. slavik;3pt;jumpshot;0;24;26
+2309844;2;07:12:00;07:12;bk opava;j. sirina;foulon;;1;24;26
+2309844;2;07:12:00;07:12;nh ostrava;k. tyml;foul;personal;1;24;26
+2309844;2;07:26:00;07:26;nh ostrava;k. tyml;assist;;1;24;26
+2309844;2;07:26:00;07:26;nh ostrava;e. weaver;3pt;jumpshot;1;24;26
+2309844;2;07:40:00;07:40;bk opava;s. pursl;turnover;travel;1;21;26
+2309844;2;07:56:00;07:56;bk opava;f. zbranek;substitution;out;1;21;26
+2309844;2;07:56:00;07:56;bk opava;r. farsky;substitution;in;1;21;26
+2309844;2;07:57:00;07:57;bk opava;j. mokran;rebound;defensive;1;21;26
+2309844;2;07:59:00;07:59;nh ostrava;k. tyml;3pt;jumpshot;0;21;26
+2309844;2;08:07:00;08:07;nh ostrava;e. williams;rebound;defensive;1;21;26
+2309844;2;08:09:00;08:09;bk opava;f. zbranek;3pt;jumpshot;0;21;26
+2309844;2;08:20:00;08:20;bk opava;s. pursl;foulon;;1;21;26
+2309844;2;08:20:00;08:20;nh ostrava;j. micka;foul;personal;1;21;26
+2309844;2;08:35:00;08:35;nh ostrava;k. tyml;3pt;jumpshot;1;21;26
+2309844;2;08:47:00;08:47;bk opava;j. sirina;substitution;in;1;18;26
+2309844;2;08:47:00;08:47;bk opava;s. pursl;substitution;in;1;18;26
+2309844;2;08:47:00;08:47;bk opava;a. pechacek;substitution;out;1;18;26
+2309844;2;08:47:00;08:47;bk opava;r. kouril;substitution;out;1;18;26
+2309844;2;08:47:00;08:47;nh ostrava;k. tyml;steal;;1;18;26
+2309844;2;08:47:00;08:47;bk opava;j. slavik;turnover;ballhandling;1;18;26
+2309844;2;09:01:00;09:01;nh ostrava;k. tyml;assist;;1;18;26
+2309844;2;09:01:00;09:01;nh ostrava;j. micka;2pt;jumpshot;1;18;26
+2309844;2;09:07:00;09:07;nh ostrava;s. svoboda;steal;;1;16;26
+2309844;2;09:07:00;09:07;bk opava;j. mokran;turnover;ballhandling;1;16;26
+2309844;2;09:23:00;09:23;bk opava;j. slavik;steal;;1;16;26
+2309844;2;09:23:00;09:23;nh ostrava;j. micka;turnover;ballhandling;1;16;26
+2309844;2;09:36:00;09:36;nh ostrava;e. williams;rebound;defensive;1;16;26
+2309844;2;09:39:00;09:39;bk opava;j. slavik;3pt;jumpshot;0;16;26
+2309844;2;09:43:00;09:43;nh ostrava;m. majercak;substitution;out;1;16;26
+2309844;2;09:43:00;09:43;nh ostrava;e. weaver;substitution;in;1;16;26
+2309844;2;09:47:00;09:47;bk opava;r. kouril;freethrow;2of2;1;16;26
+2309844;2;09:47:00;09:47;bk opava;r. kouril;freethrow;1of2;1;16;25
+2309844;2;09:47:00;09:47;bk opava;r. kouril;foulon;;1;16;24
+2309844;2;09:47:00;09:47;nh ostrava;m. majercak;foul;unsportsmanlike;1;16;24
+2309844;2;09:47:00;09:47;bk opava;r. kouril;steal;;1;16;24
+2309844;2;09:47:00;09:47;nh ostrava;k. tyml;turnover;badpass;1;16;24
+2309844;2;09:51:00;09:51;nh ostrava;m. majercak;foulon;;1;16;24
+2309844;2;09:51:00;09:51;bk opava;a. pechacek;foul;personal;1;16;24
+2309844;2;10:00:00;10:00;;;period;start;1;16;24
+2309844;2;10:00:00;10:00;bk opava;m. gniadek;substitution;out;1;16;24
+2309844;2;10:00:00;10:00;bk opava;j. mokran;substitution;in;1;16;24
+2309844;2;10:00:00;10:00;nh ostrava;d. heinzl;substitution;out;1;16;24
+2309844;2;10:00:00;10:00;nh ostrava;e. williams;substitution;in;1;16;24
+2309844;1;00:00:00;00:00;;;period;end;1;16;24
+2309844;1;00:04:70;00:04;nh ostrava;m. majercak;steal;;1;16;24
+2309844;1;00:04:70;00:04;bk opava;r. kouril;turnover;badpass;1;16;24
+2309844;1;00:11:30;00:11;bk opava;m. gniadek;rebound;offensive;1;16;24
+2309844;1;00:11:30;00:11;bk opava;j. slavik;freethrow;2of2;0;16;24
+2309844;1;00:11:30;00:11;bk opava;j. slavik;freethrow;1of2;1;16;24
+2309844;1;00:11:30;00:11;bk opava;j. slavik;foulon;;1;16;23
+2309844;1;00:11:30;00:11;nh ostrava;d. heinzl;foul;personal;1;16;23
+2309844;1;00:11:30;00:11;bk opava;j. slavik;steal;;1;16;23
+2309844;1;00:11:30;00:11;nh ostrava;d. heinzl;turnover;ballhandling;1;16;23
+2309844;1;00:11:30;00:11;nh ostrava;d. heinzl;rebound;defensive;1;16;23
+2309844;1;00:15:10;00:15;bk opava;f. zbranek;2pt;jumpshot;0;16;23
+2309844;1;00:29:30;00:29;bk opava;f. zbranek;rebound;defensive;1;16;23
+2309844;1;00:32:50;00:32;nh ostrava;m. majercak;3pt;jumpshot;0;16;23
+2309844;1;00:40:90;00:40;nh ostrava;k. tyml;substitution;in;1;16;23
+2309844;1;00:40:90;00:40;nh ostrava;m. majercak;substitution;in;1;16;23
+2309844;1;00:40:90;00:40;nh ostrava;e. weaver;substitution;out;1;16;23
+2309844;1;00:40:90;00:40;nh ostrava;m. cank;substitution;out;1;16;23
+2309844;1;00:44:70;00:44;bk opava;a. pechacek;turnover;travel;1;16;23
+2309844;1;00:55:90;00:55;bk opava;a. pechacek;rebound;defensive;1;16;23
+2309844;1;00:57:50;00:57;nh ostrava;j. micka;3pt;jumpshot;0;16;23
+2309844;1;01:09:00;01:09;bk opava;m. gniadek;assist;;1;16;23
+2309844;1;01:09:00;01:09;bk opava;r. kouril;2pt;layup;1;16;23
+2309844;1;01:15:00;01:15;nh ostrava;d. heinzl;turnover;travel;1;16;21
+2309844;1;01:23:00;01:23;nh ostrava;m. cank;rebound;defensive;1;16;21
+2309844;1;01:27:00;01:27;bk opava;a. pechacek;3pt;jumpshot;0;16;21
+2309844;1;01:38:00;01:38;nh ostrava;s. svoboda;turnover;travel;1;16;21
+2309844;1;01:59:00;01:59;bk opava;l. jurecka;substitution;out;1;16;21
+2309844;1;01:59:00;01:59;bk opava;j. slavik;substitution;in;1;16;21
+2309844;1;01:59:00;01:59;nh ostrava;;rebound;defensive;1;16;21
+2309844;1;02:03:00;02:03;bk opava;r. kouril;3pt;jumpshot;0;16;21
+2309844;1;02:10:00;02:10;bk opava;a. pechacek;rebound;defensive;1;16;21
+2309844;1;02:12:00;02:12;nh ostrava;m. cank;2pt;layup;0;16;21
+2309844;1;02:28:00;02:28;bk opava;f. zbranek;freethrow;2of2;1;16;21
+2309844;1;02:28:00;02:28;bk opava;l. jurecka;assist;;1;16;20
+2309844;1;02:28:00;02:28;bk opava;f. zbranek;freethrow;1of2;1;16;20
+2309844;1;02:28:00;02:28;bk opava;f. zbranek;foulon;;1;16;19
+2309844;1;02:28:00;02:28;nh ostrava;d. heinzl;foul;personal;1;16;19
+2309844;1;02:44:00;02:44;nh ostrava;e. weaver;freethrow;2of2;1;16;19
+2309844;1;02:44:00;02:44;nh ostrava;e. weaver;freethrow;1of2;1;15;19
+2309844;1;02:44:00;02:44;nh ostrava;e. williams;substitution;out;1;14;19
+2309844;1;02:44:00;02:44;nh ostrava;j. micka;substitution;in;1;14;19
+2309844;1;02:44:00;02:44;nh ostrava;e. weaver;foulon;;1;14;19
+2309844;1;02:44:00;02:44;bk opava;l. jurecka;foul;personal;1;14;19
+2309844;1;02:59:00;02:59;bk opava;m. gniadek;assist;;1;14;19
+2309844;1;02:59:00;02:59;bk opava;l. jurecka;3pt;jumpshot;1;14;19
+2309844;1;03:06:00;03:06;bk opava;m. gniadek;rebound;defensive;1;14;16
+2309844;1;03:08:00;03:08;nh ostrava;d. heinzl;3pt;jumpshot;0;14;16
+2309844;1;03:14:00;03:14;nh ostrava;e. williams;rebound;offensive;1;14;16
+2309844;1;03:18:00;03:18;nh ostrava;m. cank;3pt;jumpshot;0;14;16
+2309844;1;03:40:00;03:40;bk opava;a. pechacek;2pt;turnaroundjumpshot;1;14;16
+2309844;1;03:56:00;03:56;nh ostrava;m. snopek;substitution;out;1;14;14
+2309844;1;03:56:00;03:56;nh ostrava;s. svoboda;substitution;in;1;14;14
+2309844;1;04:04:00;04:04;nh ostrava;e. williams;2pt;dunk;1;14;14
+2309844;1;04:08:00;04:08;nh ostrava;e. williams;steal;;1;12;14
+2309844;1;04:08:00;04:08;bk opava;r. kouril;turnover;badpass;1;12;14
+2309844;1;04:25:00;04:25;nh ostrava;d. heinzl;freethrow;2of2;1;12;14
+2309844;1;04:25:00;04:25;nh ostrava;d. heinzl;freethrow;1of2;1;11;14
+2309844;1;04:25:00;04:25;bk opava;r. kouril;substitution;in;1;10;14
+2309844;1;04:25:00;04:25;bk opava;a. pechacek;substitution;in;1;10;14
+2309844;1;04:25:00;04:25;bk opava;j. mokran;substitution;out;1;10;14
+2309844;1;04:25:00;04:25;bk opava;j. sirina;substitution;out;1;10;14
+2309844;1;04:25:00;04:25;nh ostrava;m. majercak;substitution;out;1;10;14
+2309844;1;04:25:00;04:25;nh ostrava;m. cank;substitution;in;1;10;14
+2309844;1;04:25:00;04:25;nh ostrava;d. heinzl;foulon;;1;10;14
+2309844;1;04:25:00;04:25;bk opava;j. mokran;foul;personal;1;10;14
+2309844;1;04:25:00;04:25;nh ostrava;d. heinzl;rebound;offensive;1;10;14
+2309844;1;04:27:00;04:27;nh ostrava;m. majercak;2pt;layup;0;10;14
+2309844;1;04:32:00;04:32;nh ostrava;m. majercak;rebound;defensive;1;10;14
+2309844;1;04:36:00;04:36;bk opava;f. zbranek;3pt;jumpshot;0;10;14
+2309844;1;04:56:00;04:56;nh ostrava;e. weaver;assist;;1;10;14
+2309844;1;04:56:00;04:56;nh ostrava;m. majercak;3pt;jumpshot;1;10;14
+2309844;1;05:06:00;05:06;nh ostrava;e. williams;foulon;;1;7;14
+2309844;1;05:06:00;05:06;bk opava;l. jurecka;foul;personal;1;7;14
+2309844;1;05:07:00;05:07;bk opava;j. sirina;freethrow;2of2;1;7;14
+2309844;1;05:07:00;05:07;bk opava;j. sirina;freethrow;1of2;1;7;13
+2309844;1;05:07:00;05:07;bk opava;s. pursl;substitution;out;1;7;12
+2309844;1;05:07:00;05:07;bk opava;m. gniadek;substitution;in;1;7;12
+2309844;1;05:07:00;05:07;nh ostrava;;timeout;full;1;7;12
+2309844;1;05:07:00;05:07;bk opava;j. sirina;foulon;;1;7;12
+2309844;1;05:07:00;05:07;nh ostrava;m. majercak;foul;personal;1;7;12
+2309844;1;05:10:00;05:10;bk opava;j. sirina;rebound;defensive;1;7;12
+2309844;1;05:13:00;05:13;nh ostrava;e. williams;2pt;turnaroundjumpshot;0;7;12
+2309844;1;05:30:00;05:30;bk opava;j. sirina;assist;;1;7;12
+2309844;1;05:30:00;05:30;bk opava;l. jurecka;3pt;jumpshot;1;7;12
+2309844;1;05:32:00;05:32;nh ostrava;c. jeter;substitution;out;1;7;9
+2309844;1;05:32:00;05:32;nh ostrava;d. heinzl;substitution;in;1;7;9
+2309844;1;05:36:00;05:36;bk opava;j. svandrlik;substitution;out;1;7;9
+2309844;1;05:36:00;05:36;bk opava;f. zbranek;substitution;in;1;7;9
+2309844;1;05:36:00;05:36;nh ostrava;c. jeter;turnover;travel;1;7;9
+2309844;1;05:50:00;05:50;bk opava;j. sirina;assist;;1;7;9
+2309844;1;05:50:00;05:50;bk opava;j. mokran;2pt;jumpshot;1;7;9
+2309844;1;06:01:00;06:01;nh ostrava;e. williams;2pt;layup;1;7;7
+2309844;1;06:20:00;06:20;nh ostrava;m. majercak;rebound;defensive;1;5;7
+2309844;1;06:23:00;06:23;bk opava;l. jurecka;2pt;jumpshot;0;5;7
+2309844;1;06:30:00;06:30;bk opava;j. slavik;substitution;out;1;5;7
+2309844;1;06:30:00;06:30;bk opava;l. jurecka;substitution;in;1;5;7
+2309844;1;06:30:00;06:30;bk opava;s. pursl;foulon;;1;5;7
+2309844;1;06:30:00;06:30;nh ostrava;m. snopek;foul;personal;1;5;7
+2309844;1;06:32:00;06:32;nh ostrava;m. snopek;assist;;1;5;7
+2309844;1;06:32:00;06:32;nh ostrava;c. jeter;2pt;dunk;1;5;7
+2309844;1;06:41:00;06:41;nh ostrava;m. snopek;steal;;1;3;7
+2309844;1;06:41:00;06:41;bk opava;j. slavik;turnover;badpass;1;3;7
+2309844;1;07:00:00;07:00;bk opava;s. pursl;rebound;defensive;1;3;7
+2309844;1;07:00:00;07:00;nh ostrava;m. snopek;freethrow;2of2;0;3;7
+2309844;1;07:00:00;07:00;nh ostrava;m. snopek;freethrow;1of2;0;3;7
+2309844;1;07:00:00;07:00;nh ostrava;m. snopek;foulon;;1;3;7
+2309844;1;07:00:00;07:00;bk opava;s. pursl;foul;personal;1;3;7
+2309844;1;07:13:00;07:13;nh ostrava;;rebound;defensive;1;3;7
+2309844;1;07:15:00;07:15;bk opava;j. svandrlik;3pt;jumpshot;0;3;7
+2309844;1;07:30:00;07:30;bk opava;j. mokran;rebound;defensive;1;3;7
+2309844;1;07:33:00;07:33;nh ostrava;e. weaver;3pt;jumpshot;0;3;7
+2309844;1;07:54:00;07:54;nh ostrava;c. jeter;rebound;defensive;1;3;7
+2309844;1;07:56:00;07:56;bk opava;s. pursl;2pt;jumpshot;0;3;7
+2309844;1;08:06:00;08:06;bk opava;j. slavik;steal;;1;3;7
+2309844;1;08:06:00;08:06;nh ostrava;c. jeter;turnover;ballhandling;1;3;7
+2309844;1;08:15:00;08:15;nh ostrava;m. snopek;steal;;1;3;7
+2309844;1;08:15:00;08:15;bk opava;j. slavik;turnover;badpass;1;3;7
+2309844;1;08:19:00;08:19;bk opava;j. sirina;foulon;;1;3;7
+2309844;1;08:19:00;08:19;nh ostrava;m. majercak;foul;personal;1;3;7
+2309844;1;08:26:00;08:26;bk opava;j. mokran;rebound;defensive;1;3;7
+2309844;1;08:29:00;08:29;nh ostrava;c. jeter;2pt;jumpshot;0;3;7
+2309844;1;08:34:00;08:34;nh ostrava;m. majercak;foulon;;1;3;7
+2309844;1;08:34:00;08:34;bk opava;j. slavik;foul;personal;1;3;7
+2309844;1;08:49:00;08:49;bk opava;j. sirina;assist;;1;3;7
+2309844;1;08:49:00;08:49;bk opava;j. mokran;2pt;layup;1;3;7
+2309844;1;08:57:00;08:57;nh ostrava;e. weaver;assist;;1;3;5
+2309844;1;08:57:00;08:57;nh ostrava;m. snopek;3pt;jumpshot;1;3;5
+2309844;1;09:16:00;09:16;bk opava;j. svandrlik;assist;;1;0;5
+2309844;1;09:16:00;09:16;bk opava;j. mokran;2pt;layup;1;0;5
+2309844;1;09:27:00;09:27;bk opava;s. pursl;rebound;defensive;1;0;3
+2309844;1;09:29:00;09:29;nh ostrava;e. weaver;3pt;jumpshot;0;0;3
+2309844;1;09:52:00;09:52;bk opava;j. sirina;assist;;1;0;3
+2309844;1;09:52:00;09:52;bk opava;j. mokran;3pt;jumpshot;1;0;3
+2309844;1;09:59:00;09:59;nh ostrava;c. jeter;jumpball;lost;1;0;0
+2309844;1;09:59:00;09:59;bk opava;s. pursl;jumpball;won;1;0;0
+2309844;1;10:00:00;10:00;;;jumpball;startperiod;1;0;0
+2309844;1;10:00:00;10:00;;;period;start;1;0;0
+2309844;1;10:00:00;10:00;;;game;start;1;0;0
