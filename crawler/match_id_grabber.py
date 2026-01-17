@@ -4,7 +4,7 @@ import re
 import time
 import sys
 
-# === CONFIGURATION for szn 2024/25 ===
+# === CONFIGURATION for 2024/25===
 SOURCE_URL = "https://nbl.basketball/zapasy?y=2024&p1=0&c=0&d_od=&d_do=&k=0"
 TARGET_FILE = "input.txt"
 OUTPUT_FOLDER_NAME = "nbl_season_2024"
@@ -15,8 +15,7 @@ HEADERS = {
 
 
 def get_match_urls(url):
-    """Fetches all unique match URLs from the schedule page."""
-    print(f"Fetching match list from: {url}")
+    print(f"Fetching match list from NBL website: {url}")
     try:
         response = requests.get(url, headers=HEADERS, timeout=15)
         response.raise_for_status()
@@ -29,15 +28,14 @@ def get_match_urls(url):
                 links.add(f"https://nbl.basketball{clean_path}")
 
         sorted_links = sorted(list(links))
-        print(f"Found {len(sorted_links)} unique match pages.")
+        print(f"Found {len(sorted_links)} match pages on the web.")
         return sorted_links
     except Exception as e:
-        print(f"Error fetching list: {e}")
+        print(f"❌ Error fetching list: {e}")
         return []
 
 
 def extract_fiba_id(match_url):
-    """Extracts FIBA ID from the LiveStats button."""
     try:
         response = requests.get(match_url, headers=HEADERS, timeout=10)
         if response.status_code != 200: return None
@@ -63,20 +61,23 @@ if __name__ == "__main__":
     match_urls = get_match_urls(SOURCE_URL)
 
     if not match_urls:
-        print("No matches found.")
+        print("❌ No matches found.")
         sys.exit(1)
 
     fiba_ids = []
-    print(f"Scanning {len(match_urls)} matches...")
+    total = len(match_urls)
+    print(f"\nScanning {total} matches for FIBA LiveStats IDs...\n")
 
     for i, url in enumerate(match_urls):
+        cz_web_id = url.split('/')[-1]
+
         fiba_id = extract_fiba_id(url)
 
         if fiba_id:
             fiba_ids.append(fiba_id)
-            print(f"[{i + 1}/{len(match_urls)}] ID Found: {fiba_id}")
+            print(f"[{i + 1}/{total}] CZ Web ID {cz_web_id} -> LiveStats ID: {fiba_id}")
         else:
-            print(f"[{i + 1}/{len(match_urls)}] No ID found")
+            print(f"[{i + 1}/{total}] CZ Web ID {cz_web_id} -> ❌ No LiveStats link found")
 
         time.sleep(0.2)
 
@@ -87,6 +88,7 @@ if __name__ == "__main__":
             f.write(f"{OUTPUT_FOLDER_NAME}\n\n")
             f.write(", ".join(unique_ids))
 
-        print(f"\nSuccess! Saved {len(unique_ids)} IDs to '{TARGET_FILE}'.")
+        print(f"\nSUCCESS! Saved {len(unique_ids)} LiveStats IDs to '{TARGET_FILE}'.")
+        print(f"Target folder set to: {OUTPUT_FOLDER_NAME}")
     else:
-        print("\nFailed to extract any IDs.")
+        print("\n❌ Failed to extract any IDs.")
