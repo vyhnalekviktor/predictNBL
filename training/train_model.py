@@ -118,6 +118,15 @@ def train_model(data_path, model_output, plot_output):
     print(f"   MAE (Mean Absolute Error): {mae:.2f} points")
     print(f"   R2 Score: {r2:.4f}")
 
+    # ... after printing MAE and R2 ...
+    import json
+    metadata = {
+        "mae": round(float(mae), 4),
+        "r2": round(float(r2), 4),
+        "features": features,
+        "samples": len(df)
+    }
+
     # Save Model
     joblib.dump(model, model_output)
     print(f"✅ Model saved to: {model_output}")

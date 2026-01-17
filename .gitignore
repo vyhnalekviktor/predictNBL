@@ -2,4 +2,4 @@ data/
 crawler/input*
 crawler/sample.json
 dataset_enrichment/zadani.txt
-training/results/*model*
+training/result*/*model*
