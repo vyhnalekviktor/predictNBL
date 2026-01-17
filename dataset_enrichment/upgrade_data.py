@@ -10,7 +10,7 @@ import sys
 warnings.filterwarnings('ignore')
 
 # volej: python upgrade_data.py --data-dir "../sample_nbl_season_data" --output "sample.csv" --current-season "2025-08-06"
-# current season kvuli vaham.
+# current season je start aktualni sezony
 
 # ==========================================
 # 1. LOAD AND PREPARE DATA (RECURSIVE)
@@ -261,7 +261,7 @@ def calculate_clutch(df_pbp):
 # 6. CONTEXT & OPPONENT (With Args)
 # ==========================================
 def add_context_and_opponent(df, current_season_start, last_season_start):
-    print("🛡Analyzing Context (Opponent, Dates, Weights)...")
+    print("Analyzing Context (Opponent, Dates, Weights)...")
 
     # A) Opponent Stats
     matches = df[['match_id', 'team']].drop_duplicates()
@@ -378,11 +378,11 @@ def main():
     print(f"\nDONE! Results saved to: {args.output}")
     print(f"Matrix dimensions: {df_final.shape}")
 
-    # Preview
+    ''' Preview
     print("\nTop Players Preview (by Points):")
     if 'points' in df_final.columns:
         print(df_final.sort_values('points', ascending=False).head(2).to_string(index=False))
-
+    '''
 
 if __name__ == "__main__":
     main()
