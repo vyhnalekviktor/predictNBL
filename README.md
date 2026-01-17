@@ -52,7 +52,7 @@ Betting Guide To display the tactical manual and strategy: `python console.py gu
 ## Betting Strategy (The MAE Rule)
 To maintain a long-term edge over the bookmakers, the system recommends the MAE Buffer Strategy:
 
-**High Confidence:** Only place bets where the Probability Over/Under is > 65%.
+**High Confidence:** Only place bets where the <mark>Probability Over/Under is > 65%.
 
 **Market Inefficiency:** Look for a gap between the model prediction and the bookmaker line that is larger than the MAE (> 3.61 points).
 
