@@ -1,6 +1,9 @@
 # NBL player prediction
 a professional-grade predictive analytics tool designed for the Czech Basketball League (NBL). It utilizes machine learning (XGBoost) to forecast individual player points and calculate the statistical probability of Over/Under betting lines.
 
+> [!WARNING]
+> This tool is for analytical purposes only. Therefore I am not providing the datasets and the training model.
+
 The system is built on Moneyball principles, focusing on advanced metrics like Usage Rate (USG%), Points Per Shot (PPS), and Rolling Form (L5/L10) rather than just basic seasonal averages.
 
 ## Key Features
@@ -57,8 +60,9 @@ To maintain a long-term edge over the bookmakers, the system recommends the MAE 
 
 ## Project Structure
 **CLI_app/:** CLI interface for predicting.
-**crawler/:** Scripts for data acquisition from FIBA LiveStats.
-**training/:** Train the model.
-**sample_nbl_season_data:** sample data from FIBA via crawler scripts
 
-`Disclaimer: This tool is for analytical purposes only. Sports betting involves risk. Use the data responsibly!`
+**crawler/:** Scripts for data acquisition from FIBA LiveStats.
+
+**training/:** Train the model.
+
+**sample_nbl_season_data/:** sample data from FIBA via crawler scripts.
