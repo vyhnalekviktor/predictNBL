@@ -6,8 +6,8 @@ import sys
 
 # === CONFIGURATION for 2024/25===
 SOURCE_URL = "https://nbl.basketball/zapasy?y=2024&p1=0&c=0&d_od=&d_do=&k=0"
-TARGET_FILE = "input.txt"
-OUTPUT_FOLDER_NAME = "nbl_season_2024"
+TARGET_FILE = "input24.txt"
+OUTPUT_FOLDER_NAME = "../data/nbl_season_2024"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
