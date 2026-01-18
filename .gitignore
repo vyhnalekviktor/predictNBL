@@ -3,3 +3,4 @@ crawler/input*
 crawler/sample.json
 dataset_enrichment/zadani.txt
 training/result*/*model*
+CLI_app/*model*
