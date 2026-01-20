@@ -1,0 +1,17 @@
+Loading Data & Calculating Full History...
+   Rolling stats for 25 metrics...
+
+Training Optimized MINUTES Model...
+   MINUTES MAE: 2.9520
+
+Training Optimized PPM Model (Full Features)...
+   PPM MAE: 0.1664
+
+COMBINING RESULTS...
+----------------------------------------
+📊 GLOBAL RESULTS (All Players):
+   MAE: 3.0455
+SNIPER RESULTS (Rotation Players >15m):
+   MAE: 3.8288 (Sázkařská přesnost)
+----------------------------------------
+Saved to result_optimized
