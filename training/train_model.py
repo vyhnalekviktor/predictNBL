@@ -6,42 +6,39 @@ from sklearn.metrics import mean_absolute_error, r2_score
 import matplotlib.pyplot as plt
 import argparse
 import os
-import joblib  # For saving the model
+import joblib
 
-
-# ==========================================
-# 1. PREPARE HISTORY (ROLLING WINDOWS)
-# ==========================================
 def prepare_rolling_features(df):
-    print("🔄 Creating Rolling Averages (Player Form)...")
+    print("Creating Rolling Averages (Player Form)...")
 
-    # Sort chronologically to ensure correct rolling calculation
     if 'date' in df.columns:
         df['date'] = pd.to_datetime(df['date'])
         df = df.sort_values(['player', 'date'])
     else:
         df = df.sort_values(['player', 'match_id'])
 
-    # Metrics where history matters (Form)
-    # OPRAVENO: Používáme MIN_FL místo minutes
     player_metrics = [
-        'points', 'MIN_FL', 'USG%', 'Rim_PPS', 'Rim_Freq',
-        'Corner3_Freq', 'Clutch_FG%', 'Fouls_Per_Min', 'TS%'
-    ]
+            'points', 'MIN_FL',
+            'Adj_Points',
+            'USG%',
+            'Pace',
+            'Consistency',
+            'TS%', 'eFG%', 'Fouls_Per_Min',
+            'ISO_Attempts',
+            'Rim_PPS', 'Rim_Freq',
+            'Corner3_Freq', 'Arc3_Freq',
+            'Clutch_FG%'
+        ]
 
     for col in player_metrics:
         if col not in df.columns: continue
-
-        # Groupby Player -> Shift by 1 (CRITICAL to avoid Data Leakage) -> Mean of 5 and 10
         df[f'L5_{col}'] = df.groupby('player')[col].transform(
             lambda x: x.shift(1).rolling(window=5, min_periods=2).mean())
         df[f'L10_{col}'] = df.groupby('player')[col].transform(
             lambda x: x.shift(1).rolling(window=10, min_periods=5).mean())
 
-        # Trend
         df[f'Trend_{col}'] = df[f'L5_{col}'] - df[f'L10_{col}']
 
-    # Drop rows with insufficient history
     original_len = len(df)
     df = df.dropna(subset=['L5_points'])
     print(f"   Dropped {original_len - len(df)} rows (insufficient history). Remaining: {len(df)}")
@@ -49,9 +46,6 @@ def prepare_rolling_features(df):
     return df
 
 
-# ==========================================
-# 2. TRAINING PIPELINE
-# ==========================================
 def train_model(data_path, model_output, plot_output):
     # 1. Load Data
     if not os.path.exists(data_path):
@@ -61,47 +55,50 @@ def train_model(data_path, model_output, plot_output):
     print(f"📂 Loading data from: {data_path}")
     df = pd.read_csv(data_path, sep=';')
 
-    # 2. Feature Engineering (Rolling Stats)
+    # 2. Feature Engineering
     df = prepare_rolling_features(df)
 
-    # 3. Define Inputs (X) and Output (y)
+    # 3. Define Features
     features = [c for c in df.columns if c.startswith(('L5_', 'L10_', 'Trend_'))]
 
-    context_features = ['Is_Home', 'Opp_Avg_Pts_Allowed', 'Opp_FG_Allowed', 'Days_Rest']
-    features += [c for c in context_features if c in df.columns]
+    context_candidates = [
+        'Is_Home',
+        'Opp_Avg_Pts_Allowed',
+        'DvP_Avg_Pts',
+        'Opp_Avg_Pace',
+        'Days_Rest'
+    ]
+
+    features += [c for c in context_candidates if c in df.columns]
 
     target = 'points'
 
-    print(f"🧠 Training on {len(features)} features. Example: {features[:3]} ...")
+    print(f"🧠 Training on {len(features)} features.")
+    print(f"   Context Features: {[c for c in features if c in context_candidates]}")
 
     X = df[features]
     y = df[target]
 
-    # Sample Weights
     weights = df['Season_Weight'] if 'Season_Weight' in df.columns else None
 
-    # Train/Test Split
     X_train, X_test, y_train, y_test, w_train, w_test = train_test_split(
         X, y, weights if weights is not None else np.ones(len(X)),
         test_size=0.2, random_state=42
     )
 
-    # XGBoost Regressor Configuration
-    # OPRAVA: early_stopping_rounds je nyní zde v konstruktoru
     model = xgb.XGBRegressor(
         n_estimators=1000,
         learning_rate=0.01,
-        max_depth=6,
+        max_depth=5,
         subsample=0.7,
         colsample_bytree=0.7,
         n_jobs=-1,
         objective='reg:absoluteerror',
-        early_stopping_rounds=50  # <--- ZDE (Moved here)
+        early_stopping_rounds=50
     )
 
     print("🚀 Starting XGBoost training...")
 
-    # OPRAVA: Odstraněno early_stopping_rounds z fit()
     model.fit(
         X_train, y_train,
         sample_weight=w_train,
@@ -118,22 +115,13 @@ def train_model(data_path, model_output, plot_output):
     print(f"   MAE (Mean Absolute Error): {mae:.2f} points")
     print(f"   R2 Score: {r2:.4f}")
 
-    # ... after printing MAE and R2 ...
-    import json
-    metadata = {
-        "mae": round(float(mae), 4),
-        "r2": round(float(r2), 4),
-        "features": features,
-        "samples": len(df)
-    }
-
     # Save Model
     joblib.dump(model, model_output)
     print(f"✅ Model saved to: {model_output}")
 
     # 5. Feature Importance Plot
-    plt.figure(figsize=(10, 8))
-    sorted_idx = model.feature_importances_.argsort()[-20:]
+    plt.figure(figsize=(12, 10))
+    sorted_idx = model.feature_importances_.argsort()[-25:]  # Top 25
     plt.barh(X.columns[sorted_idx], model.feature_importances_[sorted_idx])
     plt.title(f"XGBoost Feature Importance (MAE: {mae:.2f})")
     plt.xlabel("Relative Importance")
@@ -142,9 +130,6 @@ def train_model(data_path, model_output, plot_output):
     print(f"🖼️ Feature Importance plot saved to: {plot_output}")
 
 
-# ==========================================
-# MAIN EXECUTION
-# ==========================================
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train XGBoost model for NBL Points Prediction")
 
@@ -157,7 +142,5 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    # Ensure output directory exists
     os.makedirs(os.path.dirname(args.model), exist_ok=True)
-
     train_model(args.input, args.model, args.plot)

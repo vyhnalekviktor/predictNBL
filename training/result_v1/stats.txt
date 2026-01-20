@@ -1,0 +1,3 @@
+MAE (Mean Absolute Error): 3.61 points
+
+R2 Score: 0.4709 (Explains ~47% of total volatility)

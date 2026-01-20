@@ -1,0 +1,5 @@
+📊 MODEL RESULTS:
+   MAE (Mean Absolute Error): 3.59 points
+   R2 Score: 0.4721
+✅ Model saved to: result/nbl_model.pkl
+🖼️ Feature Importance plot saved to: result/feature_importance.png
