@@ -3,11 +3,15 @@ from bs4 import BeautifulSoup
 import re
 import time
 import sys
+import argparse
 
 # === CONFIGURATION for 2024/25===
-SOURCE_URL = "https://nbl.basketball/zapasy?y=2024&p1=0&c=0&d_od=&d_do=&k=0"
-TARGET_FILE = "input24.txt"
-OUTPUT_FOLDER_NAME = "../data/nbl_season_2024"
+parser = argparse.ArgumentParser()
+parser.add_argument('--year', default='25')
+args = parser.parse_args()
+SOURCE_URL = f"https://nbl.basketball/zapasy?y=20{args.year}&p1=0&c=0&d_od=&d_do=&k=0"
+TARGET_FILE = f"input{args.year}.txt"
+OUTPUT_FOLDER_NAME = f"../data/nbl_season_20{args.year}"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
