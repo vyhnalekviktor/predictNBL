@@ -1,0 +1,16 @@
+🚀 Loading: ../data/FINAL.csv
+🛠️  Processing Features (All Relational Logic Included)...
+   -> Calculating DvP Minutes...
+   -> Calculating Player vs Opponent History...
+📅 Split: 2025-05-19T00:00:00.000000000 | Train: 17053 | Test: 3163
+⏳ Training Minutes...
+   MAE Minutes: 3.82
+🏀 Training PPM...
+🔥 TOTAL MAE: 3.31 pts
+📉 SIGMA: 4.56
+🍰 Quarter Breakdown:
+   Q1 Avg Pred: 1.7
+   Q2 Avg Pred: 1.7
+   Q3 Avg Pred: 1.6
+   Q4 Avg Pred: 1.7
+✅ Done. Saved to models/
