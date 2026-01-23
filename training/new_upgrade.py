@@ -2,430 +2,307 @@ import os
 import glob
 import pandas as pd
 import numpy as np
+import scipy.stats as stats
 import warnings
 import argparse
-import sys
-import json
 
-# Ignore warnings for cleaner output
 warnings.filterwarnings('ignore')
 
 
 # ==========================================
-# 1. LOAD AND PREPARE DATA
+# POMOCNÉ FUNKCE
 # ==========================================
-def load_data(root_folder):
-    """Recursively loads data from the specified folder."""
-    if not os.path.exists(root_folder):
-        print(f"❌ Error: Folder '{root_folder}' does not exist.")
-        return None, None, None
 
-    print(f"Searching folder '{root_folder}'...")
+def parse_clock(t_str):
+    if pd.isna(t_str): return 0.0
+    try:
+        p = str(t_str).split(':')
+        return int(p[0]) * 60 + float(p[1]) if len(p) >= 2 else float(t_str)
+    except:
+        return 0.0
 
-    def fetch_and_concat(keyword):
-        search_pattern = os.path.join(root_folder, '**', f'*{keyword}*.csv')
-        files = glob.glob(search_pattern, recursive=True)
-        if not files: return None
 
-        df_list = []
-        for f in files:
-            try:
-                df = pd.read_csv(f, sep=';')
-                df_list.append(df)
-            except:
-                pass
-        return pd.concat(df_list, ignore_index=True) if df_list else None
+def parse_min(t_str):
+    if pd.isna(t_str): return 0.0
+    try:
+        p = str(t_str).split(':')
+        return int(p[0]) + int(p[1]) / 60
+    except:
+        return 0.0
 
-    df_box = fetch_and_concat('box_score')
-    df_pbp = fetch_and_concat('pbp')
-    df_shots = fetch_and_concat('shots')
 
-    if df_box is None or df_pbp is None:
-        print("❌ Critical Error: Missing box score or pbp data.")
-        return None, None, None
+def load_data(root):
+    if not os.path.exists(root): return None, None, None
+    print(f"📂 Načítám data z: {root}")
 
-    # Cleaning names
-    for df in [df_box, df_pbp, df_shots]:
-        if df is not None:
-            if 'player' in df.columns:
-                df['player'] = df['player'].astype(str).str.lower().str.strip()
-            if 'team' in df.columns:
-                df['team'] = df['team'].astype(str).str.lower().str.strip()
+    def get_df(k):
+        f = glob.glob(os.path.join(root, '**', k), recursive=True)
+        return pd.concat([pd.read_csv(x, sep=';') for x in f], ignore_index=True) if f else None
 
-    # Parse minutes in Box Score
-    def parse_min(t):
-        try:
-            if pd.isna(t): return 0.0
-            t_str = str(t)
-            if ':' in t_str:
-                p = t_str.split(':')
-                return int(p[0]) + int(p[1]) / 60
-            return float(t_str)
-        except:
-            return 0.0
+    df_b, df_p, df_s = get_df('*box_score*.csv'), get_df('*pbp*.csv'), get_df('*shots*.csv')
 
-    if 'minutes' in df_box.columns:
-        df_box['MIN_FL'] = df_box['minutes'].apply(parse_min)
+    for d in [df_b, df_p, df_s]:
+        if d is not None:
+            if 'player' in d.columns: d['player'] = d['player'].astype(str).str.lower().str.strip()
+            if 'team' in d.columns: d['team'] = d['team'].astype(str).str.lower().str.strip()
 
-    return df_box, df_pbp, df_shots
+    if df_b is not None and 'minutes' in df_b.columns: df_b['MIN_FL'] = df_b['minutes'].apply(parse_min)
+    if df_p is not None and 'clock' in df_p.columns: df_p['SEC'] = df_p['clock'].apply(parse_clock)
+
+    return df_b, df_p, df_s
 
 
 # ==========================================
-# 2. HOME TEAM DETECTION (Původní)
+# MODUL 1: LINEUPY & SYNERGIE
 # ==========================================
-def identify_home_team(df_pbp):
-    df_pbp = df_pbp.sort_values(['match_id', 'period', 'clock'], ascending=[True, True, False])
-    df_pbp['prev_s1'] = df_pbp.groupby('match_id')['score_home'].shift(1).fillna(0)
-    home_score_events = df_pbp[
-        (df_pbp['score_home'] > df_pbp['prev_s1']) & (df_pbp['team'].notna())
-        ]
-    match_home_map = home_score_events.groupby('match_id')['team'].agg(
-        lambda x: x.mode().iloc[0] if not x.mode().empty else None
-    ).to_dict()
-    return match_home_map
 
+def process_lineups(df_pbp, df_box):
+    print("🤝 Modul 1: Synergie & Lineup rekonstrukce...")
+    if df_pbp is None:
+        df_box['Synergy_Score'] = 0
+        df_box['Dependency_Index'] = 0
+        return df_box
 
-# ==========================================
-# 3. POSITION ESTIMATOR
-# ==========================================
-def estimate_positions(df_box):
-    print("🕵️  Estimating Player Positions (G/F/C)...")
-    stats = df_box.groupby('player').agg({
-        'assists': 'mean',
-        'rebounds': 'mean',
-        'blocks': 'mean',
-        'match_id': 'count'
-    })
+    df_pbp = df_pbp.sort_values(['match_id', 'period', 'SEC'], ascending=[True, True, False])
+    synergy_ratings = {}
 
-    def assign_pos(row):
-        if row['assists'] > 2.0 and row['assists'] > row['rebounds']: return 'G'
-        if row['rebounds'] > 4.5 or row['blocks'] > 0.4: return 'C'
-        if row['rebounds'] > row['assists'] * 2.5: return 'C'
-        return 'F'
+    for mid, group in df_pbp.groupby('match_id'):
+        match_box = df_box[df_box['match_id'] == mid]
+        starters = match_box[match_box['starter'] == 1]['player'].tolist()
+        on_court = set(starters)
+        last_score_sum = 0
+        pm_log = {p: [] for p in match_box['player'].unique()}
 
-    stats['Pos_Est'] = stats.apply(assign_pos, axis=1)
-    return stats[['Pos_Est']]
+        for idx, row in group.iterrows():
+            current_score_sum = row['score_home'] + row['score_away']
+            diff = current_score_sum - last_score_sum
 
+            if diff != 0:
+                for p in on_court:
+                    if p in pm_log:
+                        pm_log[p].append(diff)
 
-# ==========================================
-# 4. GARBAGE TIME (Nové)
-# ==========================================
-def calculate_garbage_time(df_pbp):
-    print("🗑️  Filtering Garbage Time (Score Diff > 20 in 4Q)...")
-    df_pbp['score_diff'] = abs(df_pbp['score_home'] - df_pbp['score_away'])
-    is_gt = (df_pbp['period'] >= 4) & (df_pbp['score_diff'] >= 20)
-    gt_events = df_pbp[is_gt].copy()
+            if row['action_type'] == 'substitution':
+                p = row['player']
+                if row['sub_type'] == 'in':
+                    on_court.add(p)
+                elif row['sub_type'] == 'out':
+                    if p in on_court: on_court.remove(p)
 
-    gt_events['pts_val'] = 0
-    gt_events.loc[(gt_events['action_type'].str.contains('2pt')) & (gt_events['success'] == 1), 'pts_val'] = 2
-    gt_events.loc[(gt_events['action_type'].str.contains('3pt')) & (gt_events['success'] == 1), 'pts_val'] = 3
-    gt_events.loc[(gt_events['action_type'] == 'freethrow') & (gt_events['success'] == 1), 'pts_val'] = 1
+            last_score_sum = current_score_sum
 
-    gt_stats = gt_events.groupby(['match_id', 'player'])['pts_val'].sum().reset_index()
-    gt_stats.rename(columns={'pts_val': 'GT_Points'}, inplace=True)
-    return gt_stats
+        for p, deltas in pm_log.items():
+            synergy_ratings[(mid, p)] = sum(deltas) / len(deltas) if deltas else 0
 
+    syn_df = pd.DataFrame(list(synergy_ratings.items()), columns=['keys', 'Synergy_Score'])
+    syn_df[['match_id', 'player']] = pd.DataFrame(syn_df['keys'].tolist(), index=syn_df.index)
+    syn_df = syn_df.drop(columns=['keys'])
 
-# ==========================================
-# 5. DEFENSIVE DNA & MATCHUPS (Nové)
-# ==========================================
-def calculate_defense_and_matchups(df_box, output_json_path='defense_map.json'):
-    print("🛡️  Calculating Defensive DNA & Roster Matchups...")
+    df_box = pd.merge(df_box, syn_df, on=['match_id', 'player'], how='left')
 
-    df_calc = df_box.copy()
-    for col in ['steals', 'blocks', 'defensive_rebounds', 'rebounds', 'offensive_rebounds']:
-        if col not in df_calc.columns: df_calc[col] = 0
+    df_pbp['next_player'] = df_pbp['player'].shift(-1)
+    assists = df_pbp[(df_pbp['action_type'] == 'assist')]
+    dep_map = assists.groupby(['match_id', 'next_player']).size().reset_index(name='Assisted_Baskets')
+    df_box = pd.merge(df_box, dep_map, left_on=['match_id', 'player'], right_on=['match_id', 'next_player'], how='left')
+    df_box['Dependency_Index'] = df_box['Assisted_Baskets'].fillna(0) / df_box['points'].replace(0, 1)
 
-    if 'defensive_rebounds' not in df_box.columns:
-        df_calc['defensive_rebounds'] = df_calc['rebounds'] - df_calc['offensive_rebounds']
+    df_box['Gravity'] = (df_box['points'] * 0.4) + (df_box['efficiency'] * 0.6)
 
-    # Výpočet DNA Score
-    df_calc['Def_Score_Raw'] = (df_calc['steals'] * 2.0 + df_calc['blocks'] * 1.5 + df_calc['defensive_rebounds'] * 0.5)
-
-    player_stats = df_calc.groupby('player').agg(
-        Total_Def=('Def_Score_Raw', 'sum'),
-        Total_Min=('MIN_FL', 'sum'),
-        Games=('match_id', 'count')
-    ).reset_index()
-
-    valid_players = player_stats[player_stats['Games'] >= 5].copy()
-    valid_players['Def_Rating'] = (valid_players['Total_Def'] / valid_players['Total_Min']) * 30
-
-    avg_def = valid_players['Def_Rating'].mean()
-    def_map = valid_players.set_index('player')['Def_Rating'].to_dict()
-
-    with open(output_json_path, 'w') as f:
-        json.dump(def_map, f)
-
-    # Matchups
-    df_calc['My_Def_Rating'] = df_calc['player'].map(def_map).fillna(avg_def)
-
-    def get_team_def_strength(g):
-        guards = g[g['Pos_Est'] == 'G']
-        forwards = g[g['Pos_Est'] != 'G']
-        g_str = guards['My_Def_Rating'].mean() if not guards.empty else avg_def
-        f_str = forwards['My_Def_Rating'].mean() if not forwards.empty else avg_def
-        return pd.Series({'G_Def_Str': g_str, 'F_Def_Str': f_str})
-
-    roster_strength = df_calc.groupby(['match_id', 'team']).apply(get_team_def_strength).reset_index()
-    return roster_strength
+    return df_box
 
 
 # ==========================================
-# 6. SPATIAL & ISO (Původní + Nové)
+# MODUL 2: STYL
 # ==========================================
-def calculate_spatial_and_quality(df_shots):
-    if df_shots is None: return None
-    print("🎯 Calculating Spatial Stats & Shot Quality...")
 
-    if 'is_made' not in df_shots.columns:
-        df_shots['is_made'] = df_shots['result'].isin(['made', 'Make', 1])
+def calculate_style(df_main, df_pbp, df_shots):
+    print("🎨 Modul 2: Styl, Pace & Shot Quality...")
+    df_main['Pace_Est'] = (df_main['points'] + df_main['rebounds'] + df_main['turnovers']) / df_main['MIN_FL'].replace(
+        0, 1)
+    df_main['Raw_PPM'] = df_main['points'] / df_main['MIN_FL'].replace(0, 1)
 
-    # A) Zóny (Původní)
-    def get_zone(row):
-        sub = str(row.get('sub_type', '')).lower()
-        act = str(row.get('action', '')).lower()
-        if any(x in sub for x in ['layup', 'dunk', 'driving']): return 'Rim'
-        if '3pt' in act:
-            y = row.get('y', 50)
-            if y < 10 or y > 90: return 'Corner3'
-            return 'Arc3'
-        return 'MidRange'
-
-    df_shots['Zone'] = df_shots.apply(get_zone, axis=1)
-    df_shots['Pts'] = df_shots.apply(lambda x: (3 if '3pt' in str(x['action']) else 2) if x['is_made'] else 0, axis=1)
-
-    # B) ISO (Nové)
-    iso_keywords = ['driving', 'turnaround', 'step back', 'pullup', 'dunk']
-    df_shots['is_iso'] = df_shots['sub_type'].astype(str).str.lower().apply(lambda x: any(k in x for k in iso_keywords))
-
-    stats = df_shots.groupby(['match_id', 'player']).agg(
-        ISO_Attempts=('is_iso', 'sum'),
-        ISO_Makes=('is_iso', lambda x: x[df_shots.loc[x.index, 'is_made']].sum())
-    )
-
-    zone_stats = df_shots.groupby(['match_id', 'player', 'Zone']).agg(
-        Attempts=('result', 'count'),
-        Points=('Pts', 'sum')
-    ).unstack(fill_value=0)
-    zone_stats.columns = [f'{c[1]}_{c[0]}' for c in zone_stats.columns]
-
-    final_spatial = pd.merge(stats, zone_stats, on=['match_id', 'player'], how='left')
-
-    final_spatial['Total_Shots'] = final_spatial[
-        [c for c in final_spatial.columns if 'Attempts' in c and 'ISO' not in c]].sum(axis=1)
-    for z in ['Rim', 'MidRange', 'Corner3', 'Arc3']:
-        if f'{z}_Attempts' in final_spatial.columns:
-            final_spatial[f'{z}_Freq'] = final_spatial[f'{z}_Attempts'] / final_spatial['Total_Shots'].replace(0,
-                                                                                                               np.nan)
-            final_spatial[f'{z}_PPS'] = final_spatial[f'{z}_Points'] / final_spatial[f'{z}_Attempts'].replace(0, np.nan)
-
-    return final_spatial.drop(columns=['Total_Shots'])
-
-
-# ==========================================
-# 7. CLUTCH STATS (Původní)
-# ==========================================
-def calculate_clutch(df_pbp):
-    print("🔥 Calculating Clutch Statistics...")
-
-    def clock_to_sec(c):
-        try:
-            p = str(c).split(':')
-            return int(p[0]) * 60 + int(p[1])
-        except:
-            return 999
-
-    df_pbp['Sec_Rem'] = df_pbp['clock'].apply(clock_to_sec)
-    df_pbp['Score_Diff'] = abs(df_pbp['score_home'] - df_pbp['score_away'])
-
-    clutch_mask = (df_pbp['period'] >= 4) & (df_pbp['Score_Diff'] <= 5) & (df_pbp['Sec_Rem'] <= 300)
-    clutch = df_pbp[clutch_mask]
-
-    shots = clutch[clutch['action_type'].isin(['2pt', '3pt'])]
-    clutch_stats = shots.groupby(['match_id', 'player']).agg(
-        Clutch_FGA=('success', 'count'),
-        Clutch_FGM=('success', 'sum')
-    ).reset_index()
-
-    clutch_stats['Clutch_FG%'] = clutch_stats['Clutch_FGM'] / clutch_stats['Clutch_FGA'].replace(0, np.nan)
-    return clutch_stats
-
-
-# ==========================================
-# 8. MAIN AGGREGATION & ADVANCED MATH
-# ==========================================
-# ==========================================
-# 4. MAIN AGGREGATION & ADVANCED MATH (OPRAVENO)
-# ==========================================
-def aggregate_and_calculate_advanced(df_box, df_pbp, df_shots):
-    print("📊 Aggregating and Calculating Advanced Metrics...")
-
-    # 1. Základní agregace (FGA, FTA, OREB) - Robustní metoda
-    # Z Shots
-    if df_shots is not None:
-        if 'is_made' not in df_shots.columns:
-            df_shots['is_made'] = df_shots['result'].isin(['made', 'Make', 1])
-
-        shots_agg = df_shots.groupby(['match_id', 'player']).agg(
-            FGA=('result', 'count'),
-            FGM=('is_made', 'sum')
-        ).reset_index()
+    if df_pbp is not None:
+        fd = df_pbp[df_pbp['action_type'] == 'foulon'].groupby(['match_id', 'player']).size().reset_index(
+            name='Fouls_Drawn')
+        df_main = pd.merge(df_main, fd, on=['match_id', 'player'], how='left')
+        df_main['Fouls_Drawn'] = df_main['Fouls_Drawn'].fillna(0)
     else:
-        shots_agg = pd.DataFrame()
+        df_main['Fouls_Drawn'] = 0
 
-    # Z PBP - OPRAVA VÝPOČTU (Pre-calculation)
-    # Vytvoříme pomocné číselné sloupce, abychom se vyhnuli sčítání textů
-    df_pbp['calc_fta'] = (df_pbp['action_type'] == 'freethrow').astype(int)
-    df_pbp['calc_ftm'] = ((df_pbp['action_type'] == 'freethrow') & (df_pbp['success'] == 1)).astype(int)
-    df_pbp['calc_oreb'] = ((df_pbp['action_type'] == 'rebound') & (df_pbp['sub_type'] == 'offensive')).astype(int)
+    if df_shots is not None:
+        df_shots['dist'] = np.minimum(
+            np.sqrt((df_shots['x'] - 5) ** 2 + (df_shots['y'] - 50) ** 2),
+            np.sqrt((df_shots['x'] - 95) ** 2 + (df_shots['y'] - 50) ** 2)
+        )
+        conds = [(df_shots['dist'] < 8), ((df_shots['dist'] > 22) & (abs(df_shots['y'] - 50) > 35))]
+        df_shots['Quality_Shot'] = np.select(conds, [1, 1], default=0)
+        sq = df_shots.groupby(['match_id', 'player'])['Quality_Shot'].mean().reset_index(name='Shot_Quality_Avg')
+        df_main = pd.merge(df_main, sq, on=['match_id', 'player'], how='left')
+    else:
+        df_main['Shot_Quality_Avg'] = 0.5
 
-    pbp_agg = df_pbp.groupby(['match_id', 'player']).agg(
-        FTA=('calc_fta', 'sum'),
-        FTM=('calc_ftm', 'sum'),
-        OREB=('calc_oreb', 'sum')
-    ).reset_index()
-
-    # Merge do hlavního DF
-    df = pd.merge(df_box, shots_agg, on=['match_id', 'player'], how='left')
-    df = pd.merge(df, pbp_agg, on=['match_id', 'player'], how='left')
-
-    # Fillna pro základní metriky
-    for c in ['FGA', 'FGM', 'FTA', 'FTM', 'OREB']:
-        if c in df.columns: df[c] = df[c].fillna(0)
-
-    # 2. Team Stats & PACE
-    team_grp = df.groupby(['match_id', 'team'])
-    team_stats = team_grp.agg(
-        Tm_MIN=('MIN_FL', 'sum'),
-        Tm_FGA=('FGA', 'sum'),
-        Tm_FTA=('FTA', 'sum'),
-        Tm_TOV=('turnovers', 'sum'),
-        Tm_PTS=('points', 'sum')
-    ).reset_index()
-
-    df = pd.merge(df, team_stats, on=['match_id', 'team'])
-
-    # Possessions & Pace
-    df['Tm_Poss'] = df['Tm_FGA'] + 0.44 * df['Tm_FTA'] + df['Tm_TOV']  # Basic Formula
-    df['Pace'] = 40 * (df['Tm_Poss'] / df['Tm_MIN'].replace(0, np.nan))
-
-    # USG% (Usage Rate)
-    term1 = (df['FGA'] + 0.44 * df['FTA'] + df['turnovers']) * (df['Tm_MIN'] / 5)
-    term2 = df['MIN_FL'] * df['Tm_Poss']
-    df['USG%'] = 100 * (term1 / term2.replace(0, np.nan))
-
-    # Další Původní Advanced Stats
-    df['TS%'] = df['points'] / (2 * (df['FGA'] + 0.44 * df['FTA'])).replace(0, np.nan)
-    df['eFG%'] = (df['FGM'] + 0.5 * (df['points'] - df['FGM'] * 2)) / df['FGA'].replace(0, np.nan)
-    df['Fouls_Per_Min'] = df['fouls'] / df['MIN_FL'].replace(0, np.nan)
-
-    return df
+    return df_main
 
 
 # ==========================================
-# 9. CONTEXT (DvP, Days Rest, Opponent)
+# MODUL 3: MATCHUPS & ADVANCED OPPONENT (PBP)
 # ==========================================
-def add_context_complete(df, roster_strength_df, current_season_start):
-    print("🛡️  Calculating Context (Opponent, DvP, Matchups)...")
 
-    # Opponent Identification
-    matches = df[['match_id', 'team']].drop_duplicates()
-    matches_merged = pd.merge(matches, matches, on='match_id')
-    opp_map = matches_merged[matches_merged['team_x'] != matches_merged['team_y']].rename(
-        columns={'team_x': 'team', 'team_y': 'opponent'})
-    df = pd.merge(df, opp_map[['match_id', 'team', 'opponent']], on=['match_id', 'team'], how='left')
+def calculate_matchups(df_box, df_main):
+    print("🛡️ Modul 3: Pokročilé Matchupy a Detekce Hrozeb (PBP)...")
 
-    # Opponent Stats
-    opp_stats = df.groupby('opponent').agg(
-        Opp_Avg_Pts_Allowed=('points', 'mean'),
-        Opp_Avg_Pace=('Pace', 'mean')
-    ).reset_index()
-    df = pd.merge(df, opp_stats, on='opponent', how='left')
+    # 1. Pozice
+    stats = df_box.groupby('player').agg({'rebounds': 'mean', 'blocks': 'mean', 'assists': 'mean', 'points': 'mean'})
 
-    # Roster Matchup Strength
-    roster_strength_renamed = roster_strength_df.rename(columns={
-        'team': 'opponent',
-        'G_Def_Str': 'Opp_G_Def_Str',
-        'F_Def_Str': 'Opp_F_Def_Str'
-    })
-    df = pd.merge(df, roster_strength_renamed, on=['match_id', 'opponent'], how='left')
+    def get_pos(r):
+        if r['rebounds'] > 6 and r['blocks'] > 0.5: return 'C'
+        if r['assists'] > 3.5: return 'PG'
+        if r['rebounds'] > 4.5: return 'PF'
+        if r['points'] > 12 and r['assists'] < 2.5: return 'SG'
+        return 'SF'
 
-    def assign_matchup(row):
-        return row['Opp_G_Def_Str'] if row['Pos_Est'] == 'G' else row['Opp_F_Def_Str']
+    stats['Size_Index'] = (stats['rebounds'] * 2 + stats['blocks'] * 5)
+    stats['Pos_Est'] = stats.apply(get_pos, axis=1)
+    df_main = pd.merge(df_main, stats[['Pos_Est', 'Size_Index']], on='player', how='left')
 
-    df['Roster_Matchup_Strength'] = df.apply(assign_matchup, axis=1)
+    # 2. AGREGACE SOUPEŘE VČETNĚ PBP HROZEB
+    if 'opponent' in df_main.columns:
+        team_stats = df_main.groupby(['match_id', 'team']).agg({
+            'points': 'sum',
+            'fouls': 'sum',
+            'Pace_Est': 'mean',
+            'Fouls_Drawn': 'max',  # NEW: PBP Faul magnet
+            'Synergy_Score': 'max'  # NEW: PBP Elitní obránce
+        }).reset_index()
 
-    # DvP (Long term)
-    dvp_base = df.groupby(['match_id', 'opponent', 'Pos_Est'])['points'].sum().reset_index()
-    dvp_stats = dvp_base.groupby(['opponent', 'Pos_Est'])['points'].mean().reset_index().rename(
-        columns={'points': 'DvP_Avg_Pts'})
-    df = pd.merge(df, dvp_stats, on=['opponent', 'Pos_Est'], how='left')
+        opp_stats = team_stats.rename(columns={
+            'team': 'opponent',
+            'points': 'Opp_Avg_Pts_Allowed',
+            'fouls': 'Opp_Avg_Fouls',
+            'Pace_Est': 'Opp_Avg_Pace',
+            'Fouls_Drawn': 'Opp_Max_Foul_Drawer',
+            'Synergy_Score': 'Opp_Best_Def_Synergy'
+        })
 
-    # Days Rest & Season Weight
-    if 'date' in df.columns:
-        df['date'] = pd.to_datetime(df['date'], errors='coerce').ffill().bfill()
-        df = df.sort_values(['player', 'date'])
-        df['Prev_Date'] = df.groupby('player')['date'].shift(1)
-        df['Days_Rest'] = (df['date'] - df['Prev_Date']).dt.days.fillna(7)
-        season_ts = pd.Timestamp(current_season_start)
-        df['Season_Weight'] = df['date'].apply(lambda d: 1.0 if d > season_ts else 0.5)
-        df = df.drop(columns=['Prev_Date'])
+        df_main = pd.merge(df_main, opp_stats, on=['match_id', 'opponent'], how='left')
 
-    return df
+        # VÝPOČET OBRANY PROTI POZICI (Opp_Allowed_Pos_Avg) - TOTO CHYBĚLO!
+        opp_def = df_main.groupby(['opponent', 'Pos_Est'])['points'].mean().reset_index(name='Opp_Allowed_Pos_Avg')
+        df_main = pd.merge(df_main, opp_def, on=['opponent', 'Pos_Est'], how='left')
+
+        # Opponent Size & Mismatch
+        opp_size = df_main.groupby(['opponent', 'Pos_Est'])['Size_Index'].mean().reset_index(name='Opp_Avg_Size')
+        df_main = pd.merge(df_main, opp_size, on=['opponent', 'Pos_Est'], how='left')
+        df_main['Mismatch_Adv'] = df_main['Size_Index'] - df_main['Opp_Avg_Size']
+
+        # Def_Suppressor calculation
+        player_avgs = df_main.groupby('player')['points'].transform('mean')
+        df_main['Def_Suppressor'] = df_main['Opp_Allowed_Pos_Avg'] - player_avgs
+
+    return df_main
 
 
 # ==========================================
-# MAIN EXECUTION
+# MODUL 4: QUARTERS & ODDS
 # ==========================================
+
+def calculate_quarters(df_box, df_pbp):
+    if df_pbp is None: return df_box
+    scorers = df_pbp[df_pbp['action_type'].str.contains('2pt|3pt|freethrow', na=False) & (df_pbp['success'] == 1)]
+    q_stats = scorers.pivot_table(index=['match_id', 'player'], columns='period', values='action_type', aggfunc='count',
+                                  fill_value=0)
+    q_stats.columns = [f'Q{c}_Activity' for c in q_stats.columns]
+    df_box = pd.merge(df_box, q_stats, on=['match_id', 'player'], how='left')
+    return df_box
+
+
+def calculate_clutch(df_pbp):
+    if df_pbp is None: return None
+    if 'score_home' in df_pbp.columns:
+        df_pbp['diff'] = abs(df_pbp['score_home'] - df_pbp['score_away'])
+        mask = (df_pbp['period'] == 4) & (df_pbp['diff'] <= 5) & (df_pbp['SEC'] <= 300)
+        return df_pbp[mask].groupby(['match_id', 'player']).size().reset_index(name='Clutch_Events')
+    return None
+
+
+def calculate_garbage_time(df_pbp):
+    if df_pbp is None or 'score_home' not in df_pbp.columns: return None
+    df_pbp['diff'] = abs(df_pbp['score_home'] - df_pbp['score_away'])
+    is_gt = (df_pbp['period'] == 4) & (df_pbp['diff'] >= 20)
+    return df_pbp[is_gt].groupby(['match_id', 'player']).size().reset_index(name='GT_Activity_Index')
+
+
+# ==========================================
+# MAIN
+# ==========================================
+
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data-dir', type=str, default='../data')
-    parser.add_argument('--output', type=str, default='data/final.csv')
-    parser.add_argument('--current-season', type=str, default='2024-08-01')
+    parser.add_argument('--data-dir', default='sample_nbl_season_data')
+    parser.add_argument('--output', default='data/final_enhanced.csv')
+    parser.add_argument('--current-season', type=str, default=None,
+                        help='Start year of current season (YYYY) or date (YYYY-MM-DD)')
     args = parser.parse_args()
 
-    print("🚀 STARTING ULTIMATE DATA ENRICHMENT 🚀")
+    print("🚀 START: Advanced NBL Processor (PBP THREAT DETECTION + SEASON WEIGHTS)")
 
-    # 1. Load
     df_box, df_pbp, df_shots = load_data(args.data_dir)
     if df_box is None: return
 
-    # 2. Position Estimate
-    pos_map = estimate_positions(df_box)
-    df_box = pd.merge(df_box, pos_map, on='player', how='left')
-    df_box['Pos_Est'] = df_box['Pos_Est'].fillna('F')
+    matches = df_box[['match_id', 'team']].drop_duplicates()
+    merged = pd.merge(matches, matches, on='match_id')
+    opp_map = merged[merged['team_x'] != merged['team_y']].rename(columns={'team_x': 'team', 'team_y': 'opponent'})
+    df = pd.merge(df_box, opp_map[['match_id', 'team', 'opponent']], on=['match_id', 'team'], how='left')
 
-    # 3. Garbage Time & Defensive DNA
-    gt_data = calculate_garbage_time(df_pbp)
-    df_box = pd.merge(df_box, gt_data, on=['match_id', 'player'], how='left')
-    df_box['GT_Points'] = df_box['GT_Points'].fillna(0)
-    df_box['Adj_Points'] = df_box['points'] - df_box['GT_Points']
+    if args.current_season:
+        try:
+            cy_str = str(args.current_season).strip().split('-')[0]
+            current_year = int(cy_str)
 
-    roster_strength_df = calculate_defense_and_matchups(df_box, output_json_path='defense_map.json')
+            print(f"⚖️  Aplikuji váhy sezóny (Start aktuální: 6.8.{current_year})...")
 
-    # 4. Main Stats + Advanced
-    df = aggregate_and_calculate_advanced(df_box, df_pbp, df_shots)
+            cutoff_current = pd.Timestamp(year=current_year, month=8, day=6)
+            cutoff_prev = pd.Timestamp(year=current_year - 1, month=8, day=6)
 
-    # 5. Spatial & Clutch
-    spatial = calculate_spatial_and_quality(df_shots)
-    if spatial is not None:
-        df = pd.merge(df, spatial, on=['match_id', 'player'], how='left')
+            if 'date' in df.columns:
+                df['date'] = pd.to_datetime(df['date'], errors='coerce')
 
+                def calc_weight(d):
+                    if pd.isna(d): return 0.4
+                    if d >= cutoff_current: return 1.0
+                    if d >= cutoff_prev: return 0.7
+                    return 0.4
+
+                df['Season_Weight'] = df['date'].apply(calc_weight)
+                print(f"   ✅ Váhy přidány do sloupce 'Season_Weight': 1.0 (Aktuální), 0.7 (Minulá), 0.4 (Starší)")
+            else:
+                df['Season_Weight'] = 1.0
+        except Exception as e:
+            print(f"❌ Chyba při výpočtu vah: {e}")
+            df['Season_Weight'] = 1.0
+    else:
+        df['Season_Weight'] = 1.0
+
+    # Moduly
+    df = process_lineups(df_pbp, df)
+    df = calculate_style(df, df_pbp, df_shots)
+    df = calculate_matchups(df_box, df)
+
+    df = calculate_quarters(df, df_pbp)
     clutch = calculate_clutch(df_pbp)
-    if clutch is not None:
-        df = pd.merge(df, clutch, on=['match_id', 'player'], how='left')
+    if clutch is not None: df = pd.merge(df, clutch, on=['match_id', 'player'], how='left')
 
-    # 6. Context
-    df = add_context_complete(df, roster_strength_df, args.current_season)
+    gt = calculate_garbage_time(df_pbp)
+    if gt is not None: df = pd.merge(df, gt, on=['match_id', 'player'], how='left')
 
-    # 7. Final Cleanup
-    df.fillna(0, inplace=True)
+    nums = df.select_dtypes(include=[np.number]).columns
+    df[nums] = df[nums].fillna(0)
 
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
-    df.to_csv(args.output, index=False, sep=';')
-    print(f"\n✅ DONE! Saved to: {args.output}")
-    print(f"   Saved Defensive DNA to: defense_map.json")
+    df.to_csv(args.output, sep=';', index=False)
+
+    print(f"✅ Uloženo: {args.output}")
+    print(f"   NOVÉ SLOUPCE: 'Opp_Max_Foul_Drawer', 'Opp_Best_Def_Synergy', 'Raw_PPM', 'Opp_Allowed_Pos_Avg'")
 
 
 if __name__ == "__main__":
